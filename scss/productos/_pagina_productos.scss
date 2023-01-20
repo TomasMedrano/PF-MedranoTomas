@@ -13,7 +13,7 @@
 
 #mainproductos {
     grid-area: mainproductos;
-    background-color: #0e0b16;
+    background-color: red;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 0.5fr);
@@ -25,8 +25,7 @@
     
     ;
 }
-
-#teclados {
+.teclados {
     grid-area: teclados;
     background-color: #0e0b16;
     display: grid;
@@ -38,7 +37,7 @@
 }
 
 
-#teclados-titulo {
+.teclados-titulo {
     grid-area: teclados-titulo;
     color: #6f04d9;
     display: flex;
@@ -46,12 +45,13 @@
     align-content: center;
 }
 
-#teclados-tarjetas {
+.teclados-tarjetas {
     grid-area: teclados-tarjetas;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 
 
 #auriculares {
@@ -107,10 +107,6 @@
     flex-wrap: wrap;
 }
 
-
-
-
-
 #mouses {
     grid-area: mouses;
     background-color: #0e0b16;
@@ -135,4 +131,66 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	&:hover {
+		.flip-card-inner {
+			transform: rotateY(180deg);
+		}
+	}
+}
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+.flip-card-front {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 16px;
+	background-image: linear-gradient(45deg, #6f04d9, #d9048e);
+	img {
+		width: 300px;
+		margin-top: 5rem;
+	}
+}
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 16px;
+	background-image: linear-gradient(315deg, #6f04d9, #8a045c);
+	color: #ffffff;
+	transform: rotateY(180deg);
+	img {
+		width: 200px;
+		margin-top: 1rem;
+	}
+	h3 {
+		margin-bottom: 0.3rem;
+		margin: 0;
+		color: #ffffff;
+	}
+	a {
+		text-decoration: none;
+		list-style: none;
+	}
+	h2 {
+		margin: 0;
+		color: #ffffff;
+	}
 }

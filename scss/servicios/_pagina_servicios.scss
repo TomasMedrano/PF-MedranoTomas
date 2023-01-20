@@ -1,0 +1,49 @@
+#grillaservicios {
+    width: 99vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 1fr 0.2fr;
+    grid-template-areas:
+    "header"
+    "mainservicios"
+    "footer"
+
+    ;
+}
+
+
+#main_servicios {
+    grid-area: mainservicios ;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-template-areas: 
+    "tituloservicios"
+    "reparacion_de_pc"
+    "iptv"
+    ;
+}
+
+#tituloservicios {
+    grid-area: tituloservicios;
+    color: #6f04d9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#reparacion_de_pc {
+    grid-area: reparacion_de_pc;
+    color: #4717f6;
+    text-align: center;
+  
+}
+
+
+#iptv {
+    grid-area: iptv;
+    color: #4717f6;
+    text-align: center;
+}
