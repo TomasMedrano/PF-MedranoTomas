@@ -1,0 +1,172 @@
+header {
+    grid-area: header;
+    background-color: black;
+   display: grid;
+   grid-template-columns: 0.5fr 1fr 1fr;
+   grid-template-rows: 0.2fr auto;
+   grid-template-areas: 
+   "icono redesmenu redesmenu"
+   "icono nav nav"
+   ;
+}
+
+#icono {
+    grid-area: icono;
+}
+.logoheader {
+    height: 10vh;
+}
+
+#nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: end;
+    margin-left: 50px;
+}
+.navbar-toggler {
+    background-color: #4717f6;
+}
+.menu_nav {
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		list-style: none;
+		a {
+			font-size: 1.2rem;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+			padding: 10px;
+			transition: 0.5s ease;
+		}
+	}
+	&:hover {
+		li {
+			a {
+				color: #4717f6;
+				&:not(:hover) {
+					color: white;
+					opacity: 0.3;
+					filter: blur(1px);
+				}
+			}
+		}
+	}
+}
+
+
+.botondebusqueda {
+	border: none;
+	color: #ffffff;
+	width: 7em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	background: linear-gradient( 90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4 );
+	background-size: 300%;
+	border-radius: 30px;
+	text-transform: uppercase;
+	cursor: pointer;
+	z-index: 1;
+    
+        &:hover {
+            animation: animation 8s linear infinite;
+            border: none;
+            &::beffore {
+                filter: blur(20px);
+                @keyframes animation {
+                    0% {background-position: 0%;}
+                    100% {background-position: 400%;}
+                }
+            }
+        }
+        &:before {
+            content: "";
+            top: 5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient( 90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4 );
+            background-size: 400%;
+            border-radius: 35%;
+            transition: 4s;
+        }
+}
+
+.redesmenu {
+    grid-area: redesmenu;
+     div {
+        display: flex;
+        justify-content: end;
+        a {
+            i {
+                text-align: center;
+                font-size: 20px;
+                color: #6f04d9;
+                margin-right: 20px;
+                border-radius: 50%;
+                padding: 5px ;
+                margin-top: 5px;
+                transition: .3s ease;
+
+            }
+        }
+    }
+}
+
+
+
+   
+
+
+ .fa-youtube {
+    &:hover {
+        background-color: red;
+    color: white;
+    box-shadow: 0 0 15px red
+                0 0 45px red
+                0 0 75px red
+                0 0 115px red;
+    }
+    
+ }
+
+
+
+ .fa-twitter {
+    &:hover {
+            background-color: #1da1f2;
+            color: white;
+            box-shadow: 0 0 15px #1da1f2
+                0 0 45px #1da1f2
+                0 0 75px #1da1f2
+                0 0 115px #1da1f2;
+
+    }
+    
+ }
+
+ .fa-instagram {
+    &:hover {
+        background-color: #d6249f;
+        color: white;
+        box-shadow: 0 0 15px #d6249f
+                    0 0 45px #d6249f
+                    0 0 75px #d6249f
+                    0 0 115px #d6249f;
+    }
+    
+ }
+
+ .fa-facebook {
+    &:hover {
+        background-color: #3b5998;
+        color: white;
+        box-shadow: 0 0 15px #3b5998
+                    0 0 45px #3b5998
+                    0 0 75px #3b5998
+                    0 0 115px #3b5998;
+    }
+    
+ }
