@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
 #grilla {
-  width: 99vw;
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.01fr repeat(4, 3fr) 0.2fr;
