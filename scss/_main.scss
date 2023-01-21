@@ -26,7 +26,7 @@ main {
 #categorias {
     grid-area: categorias;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: $color-de-fondo;
        a {

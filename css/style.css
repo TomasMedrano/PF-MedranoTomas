@@ -61,7 +61,7 @@ header {
   100% {
     background-position: 400%; } }
 
-.botondebusqueda {
+.botondebusqueda, #tienda .bonton_carrito {
   border: none;
   color: #ffffff;
   width: 7em;
@@ -74,10 +74,10 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   z-index: 1; }
-  .botondebusqueda:hover {
+  .botondebusqueda:hover, #tienda .bonton_carrito:hover {
     animation: animation 8s linear infinite;
     border: none; }
-    .botondebusqueda:hover::beffore {
+    .botondebusqueda:hover::beffore, #tienda .bonton_carrito:hover::beffore {
       filter: blur(20px); }
 
 @keyframes animation {
@@ -85,7 +85,7 @@ header {
     background-position: 0%; }
   100% {
     background-position: 400%; } }
-  .botondebusqueda:before {
+  .botondebusqueda:before, #tienda .bonton_carrito:before {
     content: "";
     top: 5px;
     left: -5px;
@@ -152,7 +152,7 @@ main {
 #categorias {
   grid-area: categorias;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: #0e0b16; }
   #categorias a {
@@ -409,7 +409,7 @@ main {
   color: #6f04d9;
   padding-left: 50px; }
 
-.descripcioningreso {
+.descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
   position: absolute;
   max-height: 35vh;
   max-width: 35vw;
@@ -475,6 +475,10 @@ footer {
       padding: 5px;
       margin-top: 5px;
       transition: .3s ease; }
+
+.mapa_de_sitio {
+  text-decoration: none;
+  color: #6f04d9; }
 
 .wpp {
   position: fixed;
@@ -697,6 +701,70 @@ footer {
   color: #6f04d9;
   text-align: center; }
 
+#grilla_producto {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas: "header"  "main_producto" "footer"; }
+
+#main_producto {
+  grid-area: main_producto;
+  background-color: #0e0b16;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "imagen_producto tienda" "descripcion1 descripcion1" "descripcion3 descripcion3" "descripcion2 descripcion2"; }
+
+#imagen_producto {
+  grid-area: imagen_producto; }
+  #imagen_producto img {
+    width: 100%; }
+
+#tienda {
+  grid-area: tienda; }
+  #tienda h1 {
+    color: #6f04d9;
+    text-align: center;
+    padding: 70px; }
+  #tienda h4 {
+    color: #ffffff;
+    text-align: center;
+    padding: 30px; }
+  #tienda div {
+    text-align: center; }
+  #tienda .bonton_carrito {
+    color: #ffffff;
+    width: 10em; }
+
+.descripcionproductoizquierda {
+  position: absolute;
+  right: 15px; }
+
+#descripcion1 {
+  grid-area: descripcion1; }
+
+#descripcion2 {
+  grid-area: descripcion2; }
+
+#descripcion3 {
+  grid-area: descripcion3; }
+
+div h1 {
+  color: #6f04d9;
+  text-align: center;
+  margin-top: 20px; }
+
+div h2 {
+  color: #4717f6;
+  margin-left: 30px; }
+
+div ul li {
+  list-style: none; }
+  div ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px; }
+
 @media screen and (max-width: 1400px) {
   header {
     grid-area: header;
@@ -708,7 +776,7 @@ footer {
     grid-template-areas: "icono redesmenu redesmenu" "icono nav nav"; } }
 
 @media screen and (max-width: 865px) {
-  .descripcioningreso {
+  .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     max-width: 30vw;
     margin-top: 8vh; } }
 
@@ -717,7 +785,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.2fr 1fr;
     grid-template-areas: "iconofooter" "navfooter" "contactofooter"; }
-  .descripcioningreso {
+  .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     max-width: 70vw;
     margin-top: 10vh; }
   #inoconofooter {
@@ -726,4 +794,24 @@ footer {
     margin-top: 20px;
     text-align: center; }
   .footer__item {
-    display: inline-flex; } }
+    display: inline-flex; }
+  #tienda {
+    grid-area: tienda; }
+    #tienda h1 {
+      font-size: 1em;
+      padding: 10px; }
+    #tienda h4 {
+      font-size: 1em;
+      padding: 10px; }
+    #tienda div {
+      font-size: 0.5em; }
+    #tienda .bonton_carrito {
+      width: 10em; }
+  .descripcionproducto {
+    font-size: 0.3em;
+    max-width: 30vw;
+    margin-top: 50px; }
+  .descripcionproductoizquierda {
+    font-size: 0.3em;
+    max-width: 30vw;
+    margin-top: 50px; } }

@@ -1,0 +1,75 @@
+#grilla_producto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+    "header" 
+    "main_producto"
+    "footer"
+    ;
+}
+
+#main_producto {
+    grid-area: main_producto;
+    background-color: $color-de-fondo;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "imagen_producto tienda"
+    "descripcion1 descripcion1"
+    "descripcion3 descripcion3"
+    "descripcion2 descripcion2"
+    ;
+}
+
+#imagen_producto {
+    grid-area: imagen_producto ;
+        img {
+            width: 100%;
+        }
+}
+#tienda {
+    grid-area: tienda;
+        h1 {
+            color: $violeta;
+            text-align: center ;
+            padding: 70px;
+        }
+        h4 {
+            color: $blanco;
+            text-align: center;
+            padding: 30px;
+        }
+        div {
+            text-align: center;
+        }
+        .bonton_carrito {
+            color: $blanco; 
+            @extend .botondebusqueda;
+            width: 10em;
+
+        }
+    }
+.descripcionproducto {
+    @extend .descripcioningreso;
+}
+.descripcionproductoizquierda {
+    position: absolute;
+    right: 15px;
+    @extend .descripcioningreso;
+    
+      
+}
+       
+#descripcion1 {
+   grid-area: descripcion1;
+}
+
+#descripcion2 {
+    grid-area: descripcion2;
+}
+#descripcion3 {
+    grid-area: descripcion3;
+    
+}

@@ -1,0 +1,30 @@
+
+    div {
+        h1 {
+            color: $violeta;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    div {
+        h2 {
+            color: $morado;
+            margin-left: 30px;
+        }
+        ul { 
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                    margin-left: 30px;
+
+                }
+            }
+        }
+    }
+
+
+
+

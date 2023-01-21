@@ -61,7 +61,37 @@
         display: inline-flex;
        
     }
+    #tienda {
+        grid-area: tienda;
+            h1 {
+                font-size: 1em;
+                padding: 10px;
+            }
+            h4 {
+                font-size: 1em;
+                padding: 10px;
+            }
+            div {
+                font-size: 0.5em;
+            }
+            .bonton_carrito {
+                width: 10em;
+    
+            }
+        }
+    
+    .descripcionproducto {
+        font-size: 0.3em;
+        max-width: 30vw;
+        margin-top: 50px;
+    }
+    .descripcionproductoizquierda {
+        font-size: 0.3em;
+        max-width: 30vw;
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 320px) {
+   
 }
