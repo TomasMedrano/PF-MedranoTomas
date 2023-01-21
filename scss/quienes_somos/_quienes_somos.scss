@@ -13,8 +13,8 @@
 
 #mainquienes {
     grid-area: mainquienes;
-    background-color: #0e0b16;
-    color: #6f04d9;
+    background-color: $color-de-fondo;
+    color: $blanco;
     display: grid;
     grid-template-rows: 1fr !important;
     text-align: center;

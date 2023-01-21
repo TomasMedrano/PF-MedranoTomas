@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
+#grilla {
+  width: 99vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.01fr repeat(4, 3fr) 0.2fr;
+  grid-template-areas: "header" "main" "main" "main" "main" "footer"; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Khand', sans-serif; }
-
-#grilla {
-  width: 99vw;
-  height: 730vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.01fr repeat(4, 1fr) 0.1fr;
-  grid-template-areas: "header" "main" "main" "main" "main" "footer"; }
 
 header {
   grid-area: header;
@@ -19,7 +18,8 @@ header {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 0.2fr auto;
-  grid-template-areas: "icono redesmenu redesmenu" "icono nav nav"; }
+  grid-template-areas: "icono redesmenu redesmenu" "icono nav nav";
+  z-index: 1; }
 
 #icono {
   grid-area: icono; }
@@ -45,15 +45,21 @@ header {
       font-size: 1.2rem;
       text-decoration: none;
       text-transform: uppercase;
-      color: white;
+      color: #ffffff;
       padding: 10px;
       transition: 0.5s ease; }
   .menu_nav:hover li a {
     color: #4717f6; }
     .menu_nav:hover li a:not(:hover) {
-      color: white;
+      color: #ffffff;
       opacity: 0.3;
       filter: blur(1px); }
+
+@keyframes animation {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
 
 .botondebusqueda {
   border: none;
@@ -104,22 +110,23 @@ header {
       border-radius: 50%;
       padding: 5px;
       margin-top: 5px;
+      box-shadow: 0px 5px 10px black;
       transition: .3s ease; }
 
 .fa-youtube:hover {
   background-color: red;
-  color: white;
-  box-shadow: 0 0 15px red 0 0 45px red 0 0 75px red 0 0 115px red; }
+  color: #ffffff;
+  box-shadow: 0 0 15px red 0 0 45px red 0 0 75px red 0 0 115px red; }
 
 .fa-twitter:hover {
   background-color: #1da1f2;
-  color: white;
-  box-shadow: 0 0 15px #1da1f2 0 0 45px #1da1f2 0 0 75px #1da1f2 0 0 115px #1da1f2; }
+  color: #ffffff;
+  box-shadow: 0 0 15px #1da1f2 0 0 45px #1da1f2 0 0 75px #1da1f2 0 0 115px #1da1f2; }
 
 .fa-instagram:hover {
   background-color: #d6249f;
-  color: white;
-  box-shadow: 0 0 15px #d6249f 0 0 45px #d6249f 0 0 75px #d6249f 0 0 115px #d6249f; }
+  color: #ffffff;
+  box-shadow: 0 0 15px #d6249f 0 0 45px #d6249f 0 0 75px #d6249f 0 0 115px #d6249f; }
 
 .fa-facebook:hover {
   background-color: #3b5998;
@@ -128,11 +135,12 @@ header {
 
 main {
   grid-area: main;
+  height: auto;
   background-color: #0e0b16;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr repeat(1fr) 0.3fr;
-  grid-template-areas: "carrousel" "categorias" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
+  grid-template-rows: 0.5fr repeat(5, 1fr) 0.5fr 0.01fr;
+  grid-template-areas: "carrousel" "categorias" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
 
 /* Carrusel */
 #carrousel {
@@ -208,12 +216,12 @@ main {
     opacity: 0;
     visibility: visible; }
     .card .content h2 {
-      color: #fff;
+      color: #ffffff;
       font-size: 2em;
       line-height: 1em;
       margin-bottom: 5px; }
     .card .content h3 {
-      color: #fff;
+      color: #ffffff;
       font-size: 1em;
       margin-bottom: 50px; }
 
@@ -405,7 +413,7 @@ main {
   position: absolute;
   max-height: 35vh;
   max-width: 35vw;
-  color: #fff;
+  color: #ffffff;
   margin-left: 30px;
   margin-top: 20vh; }
 
@@ -421,6 +429,7 @@ main {
 /* FINAL MARCAS */
 footer {
   grid-area: footer;
+  height: auto;
   background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -434,7 +443,7 @@ footer {
   grid-area: navfooter; }
 
 .footer__item {
-  padding: 10px;
+  padding: 5px;
   list-style: none; }
   .footer__item a {
     text-decoration: none;
@@ -474,11 +483,10 @@ footer {
 
 #grillaproductos {
   width: 99vw;
-  height: 400vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.01fr repeat(2, 1fr) 0.1fr;
-  grid-template-areas: "header" "mainproductos" "mainproductos" "footer"; }
+  grid-template-rows: 0.01fr repeat(3, 1fr) 0.2fr;
+  grid-template-areas: "header" "mainproductos" "mainproductos" "mainproductos" "footer"; }
 
 #mainproductos {
   grid-area: mainproductos;
@@ -668,7 +676,7 @@ footer {
 #mainquienes {
   grid-area: mainquienes;
   background-color: #0e0b16;
-  color: #6f04d9;
+  color: #ffffff;
   display: grid;
   grid-template-rows: 1fr !important;
   text-align: center; }
@@ -688,3 +696,34 @@ footer {
   background-color: #0e0b16;
   color: #6f04d9;
   text-align: center; }
+
+@media screen and (max-width: 1400px) {
+  header {
+    grid-area: header;
+    height: 15vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.2fr auto;
+    grid-template-areas: "icono redesmenu redesmenu" "icono nav nav"; } }
+
+@media screen and (max-width: 865px) {
+  .descripcioningreso {
+    max-width: 30vw;
+    margin-top: 8vh; } }
+
+@media screen and (max-width: 480px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-template-areas: "iconofooter" "navfooter" "contactofooter"; }
+  .descripcioningreso {
+    max-width: 70vw;
+    margin-top: 10vh; }
+  #inoconofooter {
+    text-align: center; }
+  #navfooter {
+    margin-top: 20px;
+    text-align: center; }
+  .footer__item {
+    display: inline-flex; } }

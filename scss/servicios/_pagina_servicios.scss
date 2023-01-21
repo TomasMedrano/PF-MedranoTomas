@@ -15,7 +15,7 @@
 
 #main_servicios {
     grid-area: mainservicios ;
-    background-color: #0e0b16;
+    background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 0.1fr 1fr 1fr;
@@ -28,7 +28,7 @@
 
 #tituloservicios {
     grid-area: tituloservicios;
-    color: #6f04d9;
+    color: $violeta;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -36,7 +36,7 @@
 
 #reparacion_de_pc {
     grid-area: reparacion_de_pc;
-    color: #4717f6;
+    color: $morado;
     text-align: center;
   
 }
@@ -44,6 +44,6 @@
 
 #iptv {
     grid-area: iptv;
-    color: #4717f6;
+    color: $morado;
     text-align: center;
 }

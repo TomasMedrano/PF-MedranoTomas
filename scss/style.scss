@@ -1,5 +1,6 @@
-@import "./generales";
+@import "./variable";
 @import "./layout";
+@import "./generales";
 @import "./header";
 @import "./main";
 @import "./footer";
@@ -7,3 +8,5 @@
 @import "./servicios/pagina_servicios";
 @import "./quienes_somos/quienes_somos";
 @import "./donde_encontrarnos/donde_encontrarnos";
+@import "./mediaquerries";
+
