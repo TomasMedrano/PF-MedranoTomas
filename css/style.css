@@ -152,7 +152,7 @@ main {
 #categorias {
   grid-area: categorias;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   background-color: #0e0b16; }
   #categorias a {
