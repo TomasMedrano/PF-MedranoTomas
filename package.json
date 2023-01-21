@@ -1,7 +1,7 @@
 {
   "name": "mi_sitio_3",
   "version": "1.0.0",
-  "description": "",
+  "description": "E-comerce de perifericos de una tienda K-STORE en Tucuman",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

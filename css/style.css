@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
 #grilla {
-  width: 100vw;
+  width: 99vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.01fr repeat(4, 3fr) 0.2fr;
@@ -139,8 +139,8 @@ main {
   background-color: #0e0b16;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr repeat(5, 1fr) 0.5fr 0.01fr;
-  grid-template-areas: "carrousel" "categorias" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
+  grid-template-rows: 0.5fr repeat(5, auto) 0.5fr 0.01fr;
+  grid-template-areas: "carrousel" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
 
 /* Carrusel */
 #carrousel {
