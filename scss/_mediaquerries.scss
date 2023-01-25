@@ -1,17 +1,6 @@
 
 @media screen and (max-width: 1400px) { 
-    header {
-        grid-area: header;
-        height: 15vh;
-        background-color: $negro;
-       display: grid;
-       grid-template-columns: 0.5fr 1fr 1fr;
-       grid-template-rows: 0.2fr auto;
-       grid-template-areas: 
-       "icono redesmenu redesmenu"
-       "icono nav nav"
-       ;
-    }
+
 }
 
 @media screen and (max-width: 1200px) {  
@@ -30,9 +19,16 @@
 }
 
 @media screen and (max-width: 600px) {
+ 
+    .menu_nav {
+        max-width: 60vw;
+}
 }
 
 @media screen and (max-width: 480px) {
+    .menu_nav {
+        max-width: 70vw;
+}
     footer {
         grid-template-columns: 1fr;
        grid-template-rows: 0.5fr 0.2fr 1fr;
@@ -93,5 +89,8 @@
 }
 
 @media screen and (max-width: 320px) {
+    .menu_nav {
+        max-width: 80vw;
+}
    
 }

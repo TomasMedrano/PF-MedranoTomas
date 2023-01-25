@@ -4,7 +4,7 @@ main {
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:0.5fr repeat(5,auto) 0.5fr 0.01fr;
+    grid-template-rows:0.5fr repeat(5,auto) 0.01fr;
     grid-template-areas: 
     "carrousel"
     "categorias"
@@ -45,7 +45,6 @@ main {
 	height: 350px;
 	border-radius: 20px;
 	display: flex;
-	align-items: center;
 	transition: 0.5s;
 	min-height: 50vh;
 	.circle {
@@ -121,7 +120,7 @@ main {
 
 /*PRODUCTOS DESTACADOS */
 #productos_destacados {
-	grid-area: productos_destacad 	os;
+	grid-area: productos_destacados;
 	background-color: $color-de-fondo;
 	display: grid;
 	grid-template-columns: auto;
