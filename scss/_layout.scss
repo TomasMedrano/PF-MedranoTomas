@@ -1,6 +1,6 @@
-.grilla {
-    display: grid;
-    grid-template-columns: auto;
+#grilla {
+    display: grid; 
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; 
     grid-template-areas: 
     "header"
@@ -10,9 +10,9 @@
 } 
 
 
-header {
+header{
     grid-area: header;
-    background-color: cyan;
+    background-color: $negro;
    display: grid;
    grid-template-columns: 0.5fr 1fr 1fr;
    grid-template-rows: 0.2fr 0.2 1fr;
@@ -24,12 +24,11 @@ header {
 }
 
 
-main {
+.main__index {
     grid-area: main;
-	height: auto;
     background-color: $color-de-fondo;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows:0.5fr repeat(5,auto) 0.01fr;
     grid-template-areas: 
     "carrousel"

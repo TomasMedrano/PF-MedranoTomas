@@ -1,24 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
-.grilla {
+#grilla {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
 header {
   grid-area: header;
-  background-color: cyan;
+  background-color: black;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 0.2fr 0.2 1fr;
   grid-template-areas: "icono redesmenu redesmenu" "icono login login" "icono nav nav"; }
 
-main {
+.main__index {
   grid-area: main;
-  height: auto;
   background-color: #0e0b16;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: 0.5fr repeat(5, auto) 0.01fr;
   grid-template-areas: "carrousel" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
 
@@ -168,22 +167,18 @@ main {
 /* CATEGORIAS */
 .categorias {
   grid-area: categorias;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+  display: inline-block; }
   .categorias a {
     text-decoration: none; }
 
 .categoria {
-  padding: 20px; }
+  padding: 30px; }
 
 .card {
   position: relative;
-  width: 600px;
+  width: 100%;
   height: 450px;
   border-radius: 20px;
-  display: flex;
   transition: 0.5s;
   min-height: 50vh; }
   .card .circle {
@@ -498,7 +493,7 @@ main {
 
 .mainproductos {
   grid-area: mainproductos;
-  background-color: red;
+  background-color: #0e0b16;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 0.5fr);
