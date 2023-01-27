@@ -42,11 +42,11 @@
         max-width: 70vw;
         margin-top: 10vh;
     }
-    #inoconofooter {
+    .inoconofooter {
         text-align: center;
     }
 
-    #navfooter {
+    .navfooter {
         margin-top: 20px;
         text-align: center;
 
@@ -57,7 +57,7 @@
         display: inline-flex;
        
     }
-    #tienda {
+    .tienda {
         grid-area: tienda;
             h1 {
                 font-size: 1em;

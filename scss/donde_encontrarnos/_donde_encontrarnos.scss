@@ -1,5 +1,4 @@
 #grilladonde {
-    width: 99vw;
     height:100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -10,10 +9,10 @@
     "footer" ;
 }
 
-#maindonde {
+.maindonde {
     grid-area: maindonde;
     display: grid;
-    grid-template-rows: 1fr !important;
+    grid-template-rows: 1fr;
     background-color: #0e0b16;
     color: $violeta;
     text-align: center;

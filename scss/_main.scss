@@ -16,33 +16,32 @@ main {
     ;
 }
 /* Carrusel */
-#carrousel {
+.carrousel {
     grid-area: carrousel;
     background-color: $color-de-fondo ;
 }
 /* FIN DE CARRUSEL */
 /* CATEGORIAS */
-#categorias {
+.categorias {
     grid-area: categorias;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: $color-de-fondo;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+	
        a {
         text-decoration: none;
        }
 }
-
 .categoria {
-    display: flex;
-    margin: 30px;
-   
-
+	padding: 20px;
 }
 .card {
+	
 	position: relative;
 	width: 600px;
-	height: 350px;
+	height: 450px;
 	border-radius: 20px;
 	display: flex;
 	transition: 0.5s;
@@ -95,7 +94,7 @@ main {
 	}
 	.content {
 		position: relative;
-		width: 100%;
+		width: 50%;
 		left: 20%;
 		padding: 20px 20px 20px 40px;
 		transition: 0.5s;
@@ -111,6 +110,7 @@ main {
 			color: $blanco;
 			font-size: 1em;
 			margin-bottom: 50px;
+			
 		}
 	}
 }
@@ -119,25 +119,23 @@ main {
 /* FIN DE CATEGORIAS */
 
 /*PRODUCTOS DESTACADOS */
-#productos_destacados {
+.productos_destacados {
 	grid-area: productos_destacados;
 	background-color: $color-de-fondo;
 	display: grid;
-	grid-template-columns: auto;
-	grid-row: 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-row: auto 1fr;
 	grid-template-areas: 
     "titulo-producto-destacado"
-     "arruselproductosdestacados";
+    "caja_productos_destacados";
 }
-#titulo-producto-destacado {
+.titulo-producto-destacado {
 	grid-area: titulo-producto-destacado;
 	color:  $morado;
     margin-left: 10%;
 }
-#arruselproductosdestacados {
-	grid-area: arruselproductosdestacados;
-}
 .caja_productos_destacados {
+	grid-area: caja_productos_destacados;
 	background: $color-de-fondo;
 }
 .container_productos_destacados {
@@ -410,7 +408,7 @@ main {
 
 /* INICIO NUEVO INGRESO */
 
-#nuevoingreso {
+.nuevoingreso {
     grid-area: nuevos_ingresos;
     background-color: $color-de-fondo;   
 }
@@ -437,9 +435,10 @@ main {
 
 /* FINAL NUEVO INGRESO */
 /* INICIO MARCAS */
-#marcas {
+.marcas {
     grid-area: marcas;
     display: flex;
+	flex-wrap: wrap;
     justify-content: space-evenly;
    align-items: center;
     background-color: $color-de-fondo;

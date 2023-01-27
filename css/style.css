@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
-#grilla {
-  width: 99vw;
+.grilla {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
@@ -20,7 +19,7 @@ main {
   background-color: #0e0b16;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr repeat(5, auto) 0.5fr 0.01fr;
+  grid-template-rows: 0.5fr repeat(5, auto) 0.01fr;
   grid-template-areas: "carrousel" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
 
 footer {
@@ -38,13 +37,13 @@ footer {
   box-sizing: border-box;
   font-family: 'Khand', sans-serif; }
 
-#icono {
+.icono {
   grid-area: icono; }
 
 .logoheader {
   height: 10vh; }
 
-#nav {
+.nav {
   grid-area: nav;
   display: flex;
   justify-content: end;
@@ -161,29 +160,28 @@ main {
   grid-template-areas: "carrousel" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
 
 /* Carrusel */
-#carrousel {
+.carrousel {
   grid-area: carrousel;
   background-color: #0e0b16; }
 
 /* FIN DE CARRUSEL */
 /* CATEGORIAS */
-#categorias {
+.categorias {
   grid-area: categorias;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  background-color: #0e0b16; }
-  #categorias a {
+  flex-wrap: wrap; }
+  .categorias a {
     text-decoration: none; }
 
 .categoria {
-  display: flex;
-  margin: 30px; }
+  padding: 20px; }
 
 .card {
   position: relative;
   width: 600px;
-  height: 350px;
+  height: 450px;
   border-radius: 20px;
   display: flex;
   transition: 0.5s;
@@ -226,7 +224,7 @@ main {
     transition: 0.5s; }
   .card .content {
     position: relative;
-    width: 100%;
+    width: 50%;
     left: 20%;
     padding: 20px 20px 20px 40px;
     transition: 0.5s;
@@ -244,23 +242,21 @@ main {
 
 /* FIN DE CATEGORIAS */
 /*PRODUCTOS DESTACADOS */
-#productos_destacados {
+.productos_destacados {
   grid-area: productos_destacados;
   background-color: #0e0b16;
   display: grid;
-  grid-template-columns: auto;
-  grid-row: 1fr 1fr;
-  grid-template-areas: "titulo-producto-destacado" "arruselproductosdestacados"; }
+  grid-template-columns: 1fr;
+  grid-row: auto 1fr;
+  grid-template-areas: "titulo-producto-destacado" "caja_productos_destacados"; }
 
-#titulo-producto-destacado {
+.titulo-producto-destacado {
   grid-area: titulo-producto-destacado;
   color: #4717f6;
   margin-left: 10%; }
 
-#arruselproductosdestacados {
-  grid-area: arruselproductosdestacados; }
-
 .caja_productos_destacados {
+  grid-area: caja_productos_destacados;
   background: #0e0b16; }
 
 .container_productos_destacados {
@@ -413,7 +409,7 @@ main {
 /* FINAL DE PRODUCTOS DESTACADOS */
 /*NUEVOS INGRESOS */
 /* INICIO NUEVO INGRESO */
-#nuevoingreso {
+.nuevoingreso {
   grid-area: nuevos_ingresos;
   background-color: #0e0b16; }
 
@@ -436,20 +432,20 @@ main {
 
 /* FINAL NUEVO INGRESO */
 /* INICIO MARCAS */
-#marcas {
+.marcas {
   grid-area: marcas;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   background-color: #0e0b16; }
 
 /* FINAL MARCAS */
-#inocnofooter {
+.inocnofooter {
   grid-area: iconofooter; }
 
-#navfooter {
-  grid-area: navfooter;
-  z-index: 1; }
+.navfooter {
+  grid-area: navfooter; }
 
 .footer__item {
   padding: 5px;
@@ -458,7 +454,7 @@ main {
     text-decoration: none;
     color: #6f04d9; }
 
-#contactofooter {
+.contactofooter {
   grid-area: contactofooter;
   color: #6f04d9;
   list-style: none;
@@ -495,13 +491,12 @@ main {
   right: 10px; }
 
 #grillaproductos {
-  width: 99vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.01fr repeat(3, 1fr) 0.2fr;
   grid-template-areas: "header" "mainproductos" "mainproductos" "mainproductos" "footer"; }
 
-#mainproductos {
+.mainproductos {
   grid-area: mainproductos;
   background-color: red;
   display: grid;
@@ -530,7 +525,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap; }
 
-#auriculares {
+.auriculares {
   grid-area: auriculares;
   background-color: #0e0b16;
   display: grid;
@@ -538,20 +533,20 @@ main {
   grid-template-rows: 0.3fr 0.5fr;
   grid-template-areas: "auriculares-titulo " "auriculares-tarjetas "; }
 
-#auriculares-titulo {
+.auriculares-titulo {
   grid-area: auriculares-titulo;
   color: #6f04d9;
   display: flex;
   justify-content: center;
   align-content: center; }
 
-#auriculares-tarjetas {
+.auriculares-tarjetas {
   grid-area: auriculares-tarjetas;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
 
-#fuentes {
+.fuentes {
   grid-area: fuentes;
   background-color: #0e0b16;
   display: grid;
@@ -559,20 +554,20 @@ main {
   grid-template-rows: 0.3fr 0.5fr;
   grid-template-areas: "fuentes-titulo " "fuentes-tarjetas "; }
 
-#fuentes-titulo {
+.fuentes-titulo {
   grid-area: fuentes-titulo;
   color: #6f04d9;
   display: flex;
   justify-content: center;
   align-content: center; }
 
-#fuentes-tarjetas {
+.fuentes-tarjetas {
   grid-area: fuentes-tarjetas;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
 
-#mouses {
+.mouses {
   grid-area: mouses;
   background-color: #0e0b16;
   display: grid;
@@ -580,14 +575,14 @@ main {
   grid-template-rows: 0.3fr 0.5fr;
   grid-template-areas: "mouses-titulo" "mouses-tarjetas"; }
 
-#mouses-titulo {
+.mouses-titulo {
   grid-area: mouses-titulo;
   color: #6f04d9;
   display: flex;
   justify-content: center;
   align-content: center; }
 
-#mouses-tarjetas {
+.mouses-tarjetas {
   grid-area: mouses-tarjetas;
   display: flex;
   justify-content: space-around;
@@ -646,14 +641,13 @@ main {
     color: #ffffff; }
 
 #grillaservicios {
-  width: 99vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.15fr 1fr 0.2fr;
   grid-template-areas: "header" "mainservicios" "footer"; }
 
-#main_servicios {
+.main_servicios {
   grid-area: mainservicios;
   background-color: #0e0b16;
   display: grid;
@@ -661,19 +655,19 @@ main {
   grid-template-rows: 0.1fr 1fr 1fr;
   grid-template-areas: "tituloservicios" "reparacion_de_pc" "iptv"; }
 
-#tituloservicios {
+.tituloservicios {
   grid-area: tituloservicios;
   color: #6f04d9;
   display: flex;
   justify-content: center;
   align-content: center; }
 
-#reparacion_de_pc {
+.reparacion_de_pc {
   grid-area: reparacion_de_pc;
   color: #4717f6;
   text-align: center; }
 
-#iptv {
+.iptv {
   grid-area: iptv;
   color: #4717f6;
   text-align: center; }
@@ -686,7 +680,7 @@ main {
   grid-template-rows: 0.1 0.3fr 0.2fr;
   grid-template-areas: "header" "mainquienes" "footer"; }
 
-#mainquienes {
+.mainquienes {
   grid-area: mainquienes;
   background-color: #0e0b16;
   color: #ffffff;
@@ -695,17 +689,16 @@ main {
   text-align: center; }
 
 #grilladonde {
-  width: 99vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.01fr 1fr 0.1fr;
   grid-template-areas: "header" "maindonde" "footer"; }
 
-#maindonde {
+.maindonde {
   grid-area: maindonde;
   display: grid;
-  grid-template-rows: 1fr !important;
+  grid-template-rows: 1fr;
   background-color: #0e0b16;
   color: #6f04d9;
   text-align: center; }
@@ -793,24 +786,24 @@ div ul li {
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     max-width: 70vw;
     margin-top: 10vh; }
-  #inoconofooter {
+  .inoconofooter {
     text-align: center; }
-  #navfooter {
+  .navfooter {
     margin-top: 20px;
     text-align: center; }
   .footer__item {
     display: inline-flex; }
-  #tienda {
+  .tienda {
     grid-area: tienda; }
-    #tienda h1 {
+    .tienda h1 {
       font-size: 1em;
       padding: 10px; }
-    #tienda h4 {
+    .tienda h4 {
       font-size: 1em;
       padding: 10px; }
-    #tienda div {
+    .tienda div {
       font-size: 0.5em; }
-    #tienda .bonton_carrito {
+    .tienda .bonton_carrito {
       width: 10em; }
   .descripcionproducto {
     font-size: 0.3em;

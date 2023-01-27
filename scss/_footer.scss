@@ -1,13 +1,13 @@
 
-#inocnofooter {
+.inocnofooter {
     grid-area: iconofooter;
 
 }
 
 
-#navfooter {
+.navfooter {
     grid-area: navfooter;
-    z-index: 1;
+    
 }
 
 .footer__item {
@@ -21,7 +21,7 @@
 }
 
 
-#contactofooter {
+.contactofooter {
     grid-area: contactofooter;
     color: $violeta;
     list-style: none;

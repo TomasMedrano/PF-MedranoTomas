@@ -1,5 +1,4 @@
 #grillaproductos {
-    width: 99vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:0.01fr repeat(3, 1fr) 0.2fr;
@@ -11,7 +10,7 @@
     "footer" ;
 }
 
-#mainproductos {
+.mainproductos {
     grid-area: mainproductos;
     background-color: $youtube;
     display: grid;
@@ -54,7 +53,7 @@
 
 
 
-#auriculares {
+.auriculares {
     grid-area: auriculares;
     background-color: $color-de-fondo;
     display: grid;
@@ -65,7 +64,7 @@
     "auriculares-tarjetas ";
 }
 
-#auriculares-titulo {
+.auriculares-titulo {
     grid-area: auriculares-titulo;
     color: $violeta;
     display: flex;
@@ -73,7 +72,7 @@
     align-content: center;
 }
 
-#auriculares-tarjetas {
+.auriculares-tarjetas {
     grid-area: auriculares-tarjetas;
     display: flex;
     justify-content: space-around;
@@ -81,7 +80,7 @@
 }
 
 
-#fuentes {
+.fuentes {
     grid-area: fuentes;
     background-color: $color-de-fondo;
     display: grid;
@@ -92,7 +91,7 @@
     "fuentes-tarjetas ";
 }
 
-#fuentes-titulo {
+.fuentes-titulo {
     grid-area: fuentes-titulo;
     color: $violeta;
     display: flex;
@@ -100,14 +99,14 @@
     align-content: center;
 }
 
-#fuentes-tarjetas {
+.fuentes-tarjetas {
     grid-area: fuentes-tarjetas;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#mouses {
+.mouses {
     grid-area: mouses;
     background-color: $color-de-fondo;
     display: grid;
@@ -118,7 +117,7 @@
     "mouses-tarjetas";
 }
 
-#mouses-titulo {
+.mouses-titulo {
     grid-area: mouses-titulo;
     color: $violeta;
     display: flex;
@@ -126,7 +125,7 @@
     align-content: center;
 }
 
-#mouses-tarjetas {
+.mouses-tarjetas {
     grid-area: mouses-tarjetas;
     display: flex;
     justify-content: space-around;

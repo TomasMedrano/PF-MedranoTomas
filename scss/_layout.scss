@@ -1,5 +1,4 @@
-#grilla {
-    width: 99vw;
+.grilla {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; 
@@ -31,7 +30,7 @@ main {
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:0.5fr repeat(5,auto) 0.5fr 0.01fr;
+    grid-template-rows:0.5fr repeat(5,auto) 0.01fr;
     grid-template-areas: 
     "carrousel"
     "categorias"

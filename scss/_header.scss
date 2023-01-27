@@ -1,11 +1,11 @@
-#icono {
+.icono {
     grid-area: icono;
 }
 .logoheader {
     height: 10vh;
 }
 
-#nav {
+.nav {
     grid-area: nav;
     display: flex;
     justify-content: end;

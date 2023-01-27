@@ -1,5 +1,4 @@
 #grillaservicios {
-    width: 99vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -13,7 +12,7 @@
 }
 
 
-#main_servicios {
+.main_servicios {
     grid-area: mainservicios ;
     background-color: $color-de-fondo;
     display: grid;
@@ -26,7 +25,7 @@
     ;
 }
 
-#tituloservicios {
+.tituloservicios {
     grid-area: tituloservicios;
     color: $violeta;
     display: flex;
@@ -34,7 +33,7 @@
     align-content: center;
 }
 
-#reparacion_de_pc {
+.reparacion_de_pc {
     grid-area: reparacion_de_pc;
     color: $morado;
     text-align: center;
@@ -42,7 +41,7 @@
 }
 
 
-#iptv {
+.iptv {
     grid-area: iptv;
     color: $morado;
     text-align: center;
