@@ -7,7 +7,7 @@
 
 header {
   grid-area: header;
-  background-color: black;
+  background-color: cyan;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 0.2fr 0.2 1fr;
@@ -18,7 +18,7 @@ main {
   height: auto;
   background-color: #0e0b16;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   grid-template-rows: 0.5fr repeat(5, auto) 0.01fr;
   grid-template-areas: "carrousel" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
 
@@ -47,7 +47,7 @@ footer {
   grid-area: nav;
   display: flex;
   justify-content: end;
-  margin-left: 10px;
+  margin-left: none;
   z-index: 1; }
 
 .navbar-toggler {
@@ -63,7 +63,7 @@ footer {
       text-decoration: none;
       text-transform: uppercase;
       color: #ffffff;
-      padding: 5px;
+      margin-right: 10px;
       transition: 0.5s ease; }
   .menu_nav:hover li a {
     color: #4717f6; }
@@ -778,13 +778,7 @@ div ul li {
     max-width: 30vw;
     margin-top: 8vh; } }
 
-@media screen and (max-width: 600px) {
-  .menu_nav {
-    max-width: 60vw; } }
-
 @media screen and (max-width: 480px) {
-  .menu_nav {
-    max-width: 70vw; }
   footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.2fr 1fr;
@@ -819,7 +813,3 @@ div ul li {
     font-size: 0.3em;
     max-width: 30vw;
     margin-top: 50px; } }
-
-@media screen and (max-width: 320px) {
-  .menu_nav {
-    max-width: 80vw; } }

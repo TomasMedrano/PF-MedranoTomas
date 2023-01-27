@@ -9,7 +9,7 @@
     grid-area: nav;
     display: flex;
     justify-content: end;
-    margin-left: 10px;
+    margin-left: none;
     z-index: 1;
 }
 .navbar-toggler {
@@ -26,7 +26,7 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			color: $blanco;
-			padding: 5px;
+			margin-right: 10px;
 			transition: 0.5s ease;
 		}
 	}
