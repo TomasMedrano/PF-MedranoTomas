@@ -796,7 +796,7 @@ div ul li {
   .nuevosingresos__video {
     height: 70vh; } }
 
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 1000px) {
   .card {
     position: relative;
     width: 400px;
@@ -812,13 +812,37 @@ div ul li {
       .card .content h3 {
         font-size: 0.3rem;
         max-width: 30%; }
+  .inoconofooter {
+    text-align: center; }
+  .navfooter {
+    margin-top: 20px;
+    text-align: center; }
+  .footer__item {
+    display: inline-flex; }
   .nuevosingresos__video {
-    height: 60vh; } }
+    height: 60vh; }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-template-areas: "iconofooter" "navfooter" "contactofooter"; } }
 
 @media screen and (max-width: 865px) {
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     max-width: 30vw;
     margin-top: 8vh; } }
+
+@media screen and (max-width: 700px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-template-areas: "iconofooter" "navfooter" "contactofooter"; }
+  .inoconofooter {
+    text-align: center; }
+  .navfooter {
+    margin-top: 20px;
+    text-align: center; }
+  .footer__item {
+    display: inline-flex; } }
 
 @media screen and (max-width: 600px) {
   .card {
@@ -835,7 +859,9 @@ div ul li {
         font-size: 0.5rem; }
       .card .content h3 {
         font-size: 0.3rem;
-        max-width: 30%; } }
+        max-width: 30%; }
+  .marcas__imagen {
+    width: 100px; } }
 
 @media screen and (max-width: 480px) {
   .card {
