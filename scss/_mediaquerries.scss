@@ -1,3 +1,11 @@
+@media screen and (max-width: 1600px) { 
+    .nuevosingresos__video {
+        height: 80vh;
+    }
+}
+
+
+
 
 @media screen and (max-width: 1400px) { 
  
@@ -13,7 +21,9 @@
 }
 
 @media screen and (max-width: 1200px) {  
-
+    .nuevosingresos__video {
+        height: 80vh;
+    }
 
 }
 
@@ -43,7 +53,9 @@
             }
          }
     }
- 
+    .nuevosingresos__video {
+        height: 70vh;
+    }
  
   
 }
@@ -74,7 +86,9 @@
             }
          }
     }
- 
+    .nuevosingresos__video {
+        height: 60vh;
+    }
  
 
 }
@@ -87,6 +101,8 @@
         margin-top: 8vh;
     }
 }
+
+
 
 @media screen and (max-width: 600px) {
     .card {
@@ -213,6 +229,12 @@
         }
         
     }
+    .marcas__imagen {
+        width: 120px;
+    }
+    .nuevosingresos__video {
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -254,6 +276,12 @@
         margin-top: 30px;
         max-width: 30%;
         font-size: 0.3rem;
+    }
+    .marcas__imagen {
+        width: 90px;
+    }
+    .nuevosingresos__video {
+        height: 35vh;
     }
   
 }

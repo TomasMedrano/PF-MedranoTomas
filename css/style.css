@@ -421,7 +421,7 @@ footer {
 
 .nuevosingresos__video {
   width: 100%;
-  height: 40vh; }
+  height: 90vh; }
 
 /* FINAL NUEVO INGRESO */
 /* INICIO MARCAS */
@@ -432,6 +432,9 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   background-color: #0e0b16; }
+
+.marcas__imagen {
+  width: 200px; }
 
 /* FINAL MARCAS */
 .inocnofooter {
@@ -760,11 +763,19 @@ div ul li {
     color: #ffffff;
     margin-left: 30px; }
 
+@media screen and (max-width: 1600px) {
+  .nuevosingresos__video {
+    height: 80vh; } }
+
 @media screen and (max-width: 1400px) {
   header {
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 0.2fr 0.2 1fr;
     grid-template-areas: "icono redesmenu redesmenu" "icono none none" "nav nav nav"; } }
+
+@media screen and (max-width: 1200px) {
+  .nuevosingresos__video {
+    height: 80vh; } }
 
 @media screen and (max-width: 1024px) {
   .card {
@@ -781,7 +792,9 @@ div ul li {
         font-size: 0.5rem; }
       .card .content h3 {
         font-size: 0.3rem;
-        max-width: 30%; } }
+        max-width: 30%; }
+  .nuevosingresos__video {
+    height: 70vh; } }
 
 @media screen and (max-width: 935px) {
   .card {
@@ -798,7 +811,9 @@ div ul li {
         font-size: 0.5rem; }
       .card .content h3 {
         font-size: 0.3rem;
-        max-width: 30%; } }
+        max-width: 30%; }
+  .nuevosingresos__video {
+    height: 60vh; } }
 
 @media screen and (max-width: 865px) {
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
@@ -875,7 +890,11 @@ div ul li {
     margin-top: 50px; }
   .carousel__slide figcaption {
     position: absolute;
-    right: 4000px; } }
+    right: 4000px; }
+  .marcas__imagen {
+    width: 120px; }
+  .nuevosingresos__video {
+    height: 40vh; } }
 
 @media screen and (max-width: 320px) {
   .card {
@@ -902,4 +921,8 @@ div ul li {
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     margin-top: 30px;
     max-width: 30%;
-    font-size: 0.3rem; } }
+    font-size: 0.3rem; }
+  .marcas__imagen {
+    width: 90px; }
+  .nuevosingresos__video {
+    height: 35vh; } }
