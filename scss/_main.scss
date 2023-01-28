@@ -1,53 +1,39 @@
-main {
-    grid-area: main;
-	height: auto;
-    background-color: $color-de-fondo;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:0.5fr repeat(5,auto) 0.01fr;
-    grid-template-areas: 
-    "carrousel"
-    "categorias"
-    "categorias"
-    "productos_destacados"
-    "nuevos_ingresos"
-    "nuevos_ingresos"
-    "marcas"
-    ;
-}
+
 /* Carrusel */
 .carrousel {
     grid-area: carrousel;
     background-color: $color-de-fondo ;
+	width: 100%;
 }
 /* FIN DE CARRUSEL */
 /* CATEGORIAS */
 .categorias {
     grid-area: categorias;
-	display: inline-block;	
-		
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100vw;
        a {
         text-decoration: none;
        }
 }
 .categoria {
-	padding: 30px;
+	padding: 1vw;
 	
 }
 .card {
 	position: relative;
-	width: 100%;
-	height: 450px;
-	border-radius: 20px;
+	width: 500px;
+	height:400px;
+	border-radius: 10px;
 	transition: 0.5s;
-	min-height: 50vh;
 	.circle {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		border-radius: 20px;
+		border-radius: 10px;
 		overflow: hidden;
 		&::before {
 			content: "";
@@ -69,7 +55,7 @@ main {
 		}
 		img {
 			left: 50%;
-			height: 450px;
+			height: 70%;
 		}
 		.content {
 			left: 0;
@@ -83,13 +69,12 @@ main {
 		top: 58%;
 		left: 50%;
 		transform: translate(-50%,-50%);
-		height: 350px;
+		height: 50%;
 		pointer-events: none;
 		transition: 0.5s;
 	}
 	.content {
 		position: relative;
-		width: 50%;
 		left: 20%;
 		padding: 20px 20px 20px 40px;
 		transition: 0.5s;
@@ -97,13 +82,10 @@ main {
 		visibility: visible;
 		h2 {
 			color: $blanco;
-			font-size: 2em;
-			line-height: 1em;
 			margin-bottom: 5px;
 		}
 		h3 {
 			color: $blanco;
-			font-size: 1em;
 			margin-bottom: 50px;
 			
 		}
@@ -116,6 +98,7 @@ main {
 /*PRODUCTOS DESTACADOS */
 .productos_destacados {
 	grid-area: productos_destacados;
+	width: 100vw;
 	background-color: $color-de-fondo;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -132,6 +115,7 @@ main {
 .caja_productos_destacados {
 	grid-area: caja_productos_destacados;
 	background: $color-de-fondo;
+	width: 100vw;
 }
 .container_productos_destacados {
 	max-width: 1044px;
@@ -335,9 +319,9 @@ main {
 		width: 25%;
 		min-width: 150px;
 	}
-	.credit {
+	.titulo_producto_destacado {
 		margin-top: 1rem;
-		color: rgba(0, 0, 0, 0.5);
+		color: $morado;
 		display: block;
 	}
 }
@@ -405,7 +389,8 @@ main {
 
 .nuevoingreso {
     grid-area: nuevos_ingresos;
-    background-color: $color-de-fondo;   
+    background-color: $color-de-fondo;
+	width: 100vw;   
 }
 
 .titulos {
@@ -426,6 +411,10 @@ main {
     color: $blanco;
     margin-left: 30px;
     margin-top: 20vh;
+}
+.nuevosingresos__video {
+	width: 100%;
+	height: 40vh;
 }
 
 /* FINAL NUEVO INGRESO */

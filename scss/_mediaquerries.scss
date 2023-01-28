@@ -1,5 +1,6 @@
 
 @media screen and (max-width: 1400px) { 
+ 
     header {
         grid-template-columns: 0.5fr 1fr 1fr;
         grid-template-rows: 0.2fr 0.2 1fr;
@@ -17,11 +18,70 @@
 }
 
 @media screen and (max-width: 1024px) {
-  
+    .card {
+        position: relative;
+        width: 400px;
+        height:200px;
+       &:hover {
+        img {
+            height: 70%;
+        }
+       }
+       img {
+        height: 60%;
+       }
+        .content {
+            padding: 10px 0 0 10px;
+            h2 {
+                font-size: 0.5rem;
+                
+            }
+            h3 {
+                font-size: 0.3rem;
+                max-width: 30%;
+                
+            }
+         }
+    }
+ 
  
   
 }
+
+@media screen and (max-width: 935px) {
+    .card {
+        position: relative;
+        width: 400px;
+        height:200px;
+       &:hover {
+        img {
+            height: 70%;
+        }
+       }
+       img {
+        height: 60%;
+       }
+        .content {
+            padding: 10px 0 0 10px;
+            h2 {
+                font-size: 0.5rem;
+                
+            }
+            h3 {
+                font-size: 0.3rem;
+                max-width: 30%;
+                
+            }
+         }
+    }
+ 
+ 
+
+}
+
+
 @media screen and (max-width: 865px) {
+ 
     .descripcioningreso {
         max-width: 30vw;
         margin-top: 8vh;
@@ -29,11 +89,64 @@
 }
 
 @media screen and (max-width: 600px) {
+    .card {
+        position: relative;
+        width: 200px;
+        height:100px;
+       &:hover {
+        img {
+            height: 70%;
+        }
+       }
+       img {
+        height: 60%;
+       }
+        .content {
+            padding: 10px 0 0 10px;
+            h2 {
+                font-size: 0.5rem;
+                
+            }
+            h3 {
+                font-size: 0.3rem;
+                max-width: 30%;
+                
+            }
+         }
+    }
  
 
 }
 
 @media screen and (max-width: 480px) {
+
+    .card {
+        position: relative;
+        width: 250px;
+        height:100px;
+       &:hover {
+        img {
+            height: 60%;
+        }
+       }
+       img {
+        height: 50%;
+       }
+        .content {
+            padding: 10px 0 0 10px;
+            h2 {
+                font-size: 0.5rem;
+                
+            }
+            h3 {
+                font-size: 0.3rem;
+                max-width: 30%;
+                
+            }
+         }
+    }
+    
+
 
     footer {
         grid-template-columns: 1fr;
@@ -45,8 +158,9 @@
        ;
     }
     .descripcioningreso {
-        max-width: 70vw;
-        margin-top: 10vh;
+        margin-top: 30px;
+        max-width: 30%;
+        font-size: 0.5rem;
     }
     .inoconofooter {
         text-align: center;
@@ -92,9 +206,56 @@
         max-width: 30vw;
         margin-top: 50px;
     }
+    .carousel__slide {
+        figcaption{
+            position: absolute;
+        right: 4000px;
+        }
+        
+    }
 }
 
 @media screen and (max-width: 320px) {
+    
+    .card {
+        width:180px;
+        height:150px;
+       &:hover {
+        img {
+            height: 60%;
+        }
+       }
+       img {
+        height: 50%;
+       }
+        .content {
+            position: relative;
+		    left: 20%;
+		    padding: 10px 10px 10px 20px;
+		    transition: 0.5s;
+		    opacity: 0;
+		    visibility: visible;
+            h2 {
+                font-size: 0.5rem;
+                
+            }
+            h3 {
+                font-size: 0.3rem;
+                
+            }
+         }
+    }
 
-   
+    .contactofooter {
+        margin-right: 10px;
+        padding: 10px;
+    }
+    .descripcioningreso {
+        margin-top: 30px;
+        max-width: 30%;
+        font-size: 0.3rem;
+    }
+  
 }
+
+

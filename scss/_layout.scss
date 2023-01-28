@@ -26,6 +26,7 @@ header{
 
 .main__index {
     grid-area: main;
+    width: 100vw;
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: 1fr;

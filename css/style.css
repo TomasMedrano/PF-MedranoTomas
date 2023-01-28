@@ -15,6 +15,7 @@ header {
 
 .main__index {
   grid-area: main;
+  width: 100vw;
   background-color: #0e0b16;
   display: grid;
   grid-template-columns: 1fr;
@@ -149,45 +150,39 @@ footer {
   color: white;
   box-shadow: 0 0 15px #3b5998 0 0 45px #3b5998 0 0 75px #3b5998 0 0 115px #3b5998; }
 
-main {
-  grid-area: main;
-  height: auto;
-  background-color: #0e0b16;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr repeat(5, auto) 0.01fr;
-  grid-template-areas: "carrousel" "categorias" "categorias" "productos_destacados" "nuevos_ingresos" "nuevos_ingresos" "marcas"; }
-
 /* Carrusel */
 .carrousel {
   grid-area: carrousel;
-  background-color: #0e0b16; }
+  background-color: #0e0b16;
+  width: 100%; }
 
 /* FIN DE CARRUSEL */
 /* CATEGORIAS */
 .categorias {
   grid-area: categorias;
-  display: inline-block; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw; }
   .categorias a {
     text-decoration: none; }
 
 .categoria {
-  padding: 30px; }
+  padding: 1vw; }
 
 .card {
   position: relative;
-  width: 100%;
-  height: 450px;
-  border-radius: 20px;
-  transition: 0.5s;
-  min-height: 50vh; }
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  transition: 0.5s; }
   .card .circle {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden; }
     .card .circle::before {
       content: "";
@@ -203,7 +198,7 @@ main {
     background: #4717f6; }
   .card:hover img {
     left: 50%;
-    height: 450px; }
+    height: 70%; }
   .card:hover .content {
     left: 0;
     opacity: 1;
@@ -214,12 +209,11 @@ main {
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 350px;
+    height: 50%;
     pointer-events: none;
     transition: 0.5s; }
   .card .content {
     position: relative;
-    width: 50%;
     left: 20%;
     padding: 20px 20px 20px 40px;
     transition: 0.5s;
@@ -227,18 +221,16 @@ main {
     visibility: visible; }
     .card .content h2 {
       color: #ffffff;
-      font-size: 2em;
-      line-height: 1em;
       margin-bottom: 5px; }
     .card .content h3 {
       color: #ffffff;
-      font-size: 1em;
       margin-bottom: 50px; }
 
 /* FIN DE CATEGORIAS */
 /*PRODUCTOS DESTACADOS */
 .productos_destacados {
   grid-area: productos_destacados;
+  width: 100vw;
   background-color: #0e0b16;
   display: grid;
   grid-template-columns: 1fr;
@@ -252,7 +244,8 @@ main {
 
 .caja_productos_destacados {
   grid-area: caja_productos_destacados;
-  background: #0e0b16; }
+  background: #0e0b16;
+  width: 100vw; }
 
 .container_productos_destacados {
   max-width: 1044px;
@@ -350,9 +343,9 @@ main {
     flex: 0 0 auto;
     width: 25%;
     min-width: 150px; }
-  .carousel__slide .credit {
+  .carousel__slide .titulo_producto_destacado {
     margin-top: 1rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: #4717f6;
     display: block; }
 
 .carousel__slide.scrollable {
@@ -406,7 +399,8 @@ main {
 /* INICIO NUEVO INGRESO */
 .nuevoingreso {
   grid-area: nuevos_ingresos;
-  background-color: #0e0b16; }
+  background-color: #0e0b16;
+  width: 100vw; }
 
 .titulos {
   color: #4717f6;
@@ -424,6 +418,10 @@ main {
   color: #ffffff;
   margin-left: 30px;
   margin-top: 20vh; }
+
+.nuevosingresos__video {
+  width: 100%;
+  height: 40vh; }
 
 /* FINAL NUEVO INGRESO */
 /* INICIO MARCAS */
@@ -768,19 +766,86 @@ div ul li {
     grid-template-rows: 0.2fr 0.2 1fr;
     grid-template-areas: "icono redesmenu redesmenu" "icono none none" "nav nav nav"; } }
 
+@media screen and (max-width: 1024px) {
+  .card {
+    position: relative;
+    width: 400px;
+    height: 200px; }
+    .card:hover img {
+      height: 70%; }
+    .card img {
+      height: 60%; }
+    .card .content {
+      padding: 10px 0 0 10px; }
+      .card .content h2 {
+        font-size: 0.5rem; }
+      .card .content h3 {
+        font-size: 0.3rem;
+        max-width: 30%; } }
+
+@media screen and (max-width: 935px) {
+  .card {
+    position: relative;
+    width: 400px;
+    height: 200px; }
+    .card:hover img {
+      height: 70%; }
+    .card img {
+      height: 60%; }
+    .card .content {
+      padding: 10px 0 0 10px; }
+      .card .content h2 {
+        font-size: 0.5rem; }
+      .card .content h3 {
+        font-size: 0.3rem;
+        max-width: 30%; } }
+
 @media screen and (max-width: 865px) {
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     max-width: 30vw;
     margin-top: 8vh; } }
 
+@media screen and (max-width: 600px) {
+  .card {
+    position: relative;
+    width: 200px;
+    height: 100px; }
+    .card:hover img {
+      height: 70%; }
+    .card img {
+      height: 60%; }
+    .card .content {
+      padding: 10px 0 0 10px; }
+      .card .content h2 {
+        font-size: 0.5rem; }
+      .card .content h3 {
+        font-size: 0.3rem;
+        max-width: 30%; } }
+
 @media screen and (max-width: 480px) {
+  .card {
+    position: relative;
+    width: 250px;
+    height: 100px; }
+    .card:hover img {
+      height: 60%; }
+    .card img {
+      height: 50%; }
+    .card .content {
+      padding: 10px 0 0 10px; }
+      .card .content h2 {
+        font-size: 0.5rem; }
+      .card .content h3 {
+        font-size: 0.3rem;
+        max-width: 30%; }
   footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.2fr 1fr;
     grid-template-areas: "iconofooter" "navfooter" "contactofooter"; }
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
-    max-width: 70vw;
-    margin-top: 10vh; }
+    margin-top: 30px;
+    max-width: 30%;
+    font-size: 0.5rem; }
   .inoconofooter {
     text-align: center; }
   .navfooter {
@@ -807,4 +872,34 @@ div ul li {
   .descripcionproductoizquierda {
     font-size: 0.3em;
     max-width: 30vw;
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .carousel__slide figcaption {
+    position: absolute;
+    right: 4000px; } }
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 180px;
+    height: 150px; }
+    .card:hover img {
+      height: 60%; }
+    .card img {
+      height: 50%; }
+    .card .content {
+      position: relative;
+      left: 20%;
+      padding: 10px 10px 10px 20px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: visible; }
+      .card .content h2 {
+        font-size: 0.5rem; }
+      .card .content h3 {
+        font-size: 0.3rem; }
+  .contactofooter {
+    margin-right: 10px;
+    padding: 10px; }
+  .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
+    margin-top: 30px;
+    max-width: 30%;
+    font-size: 0.3rem; } }
