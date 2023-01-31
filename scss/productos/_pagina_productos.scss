@@ -1,11 +1,10 @@
 #grillaproductos {
     display: grid;
+    width: 100vw;
     grid-template-columns: 1fr;
-    grid-template-rows:0.01fr repeat(3, 1fr) 0.2fr;
+    grid-template-rows:0.01fr auto 0.2fr;
     grid-template-areas:
     "header"
-    "mainproductos"
-    "mainproductos"
     "mainproductos"
     "footer" 
     ;
@@ -16,7 +15,7 @@
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.5fr);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
     "teclados"
     "auriculares"
@@ -30,7 +29,7 @@
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "teclados-titulo "
     "teclados-tarjetas ";
@@ -59,7 +58,7 @@
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "auriculares-titulo "
     "auriculares-tarjetas ";
@@ -86,7 +85,7 @@
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "fuentes-titulo "
     "fuentes-tarjetas ";
@@ -131,6 +130,10 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.tarjetas {
+    padding: 10px;
 }
 
 

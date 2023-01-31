@@ -1,7 +1,8 @@
 #grilla_producto {
     display: grid;
+    width: 100vw;
     grid-template-columns: auto;
-    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
     "header" 
     "main_producto"
@@ -26,23 +27,28 @@
 #imagen_producto {
     grid-area: imagen_producto ;
         img {
-            width: 100%;
+            width: 50vw;
         }
 }
 #tienda {
     grid-area: tienda;
+    display: block;
+    align-content: center;
         h1 {
             color: $violeta;
             text-align: center ;
             padding: 70px;
+            font-size: 5rem;
         }
         h4 {
             color: $blanco;
             text-align: center;
             padding: 30px;
+           font-size: 4rem;
         }
         div {
             text-align: center;
+            font-size: 4rem;
         }
         .bonton_carrito {
             color: $blanco; 
