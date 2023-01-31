@@ -55,7 +55,7 @@
 		}
 		img {
 			left: 50%;
-			height: 70%;
+			width: 80%;;
 		}
 		.content {
 			left: 0;
@@ -69,7 +69,9 @@
 		top: 58%;
 		left: 50%;
 		transform: translate(-50%,-50%);
-		height: 50%;
+		width: 70%;
+		aspect-ratio: 3/2;
+		object-fit: contain;
 		pointer-events: none;
 		transition: 0.5s;
 	}
@@ -312,15 +314,18 @@
 		object-fit: cover;
 	}
 	figcaption {
-		color: $violeta;
+		color: $blanco;
 		align-self: flex-end;
 		padding: 20px 20px 0 20px;
 		flex: 0 0 auto;
 		width: 25%;
 		min-width: 150px;
 	}
+
 	.titulo_producto_destacado {
 		margin-top: 1rem;
+		font-size: 1.5rem;
+		font-weight: 500;
 		color: $morado;
 		display: block;
 	}
@@ -395,7 +400,7 @@
 
 .titulos {
     color:  $morado;
-    font-size: 3rems;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -409,8 +414,8 @@
     max-height: 35vh;
     max-width: 35vw;
     color: $blanco;
-    margin-left: 30px;
-    margin-top: 20vh;
+    margin-left: 5%;
+    margin-top: 20%;
 }
 .nuevosingresos__video {
 	width: 100%;
@@ -421,15 +426,20 @@
 /* INICIO MARCAS */
 .marcas {
     grid-area: marcas;
-    display: flex;
-	flex-wrap: wrap;
-    justify-content: space-evenly;
-   align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
     background-color: $color-de-fondo;
 }
 
-.marcas__imagen {
-	width: 200px;
+.marcas {
+	a {
+		img {
+			width: 15vw;
+			aspect-ratio: 3/2;
+			object-fit: contain;
+		}
+	}	
 }
 /* FINAL MARCAS */
  

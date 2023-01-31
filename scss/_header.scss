@@ -10,17 +10,18 @@
     display: flex;
     justify-content: end;
     margin-left: none;
+    margin-right: 10px;
     z-index: 1;
 }
 .navbar-toggler {
     background-color: $morado;
 }
 .menu_nav {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+        
 	li {
 		list-style: none;
-        
 		a {
 			font-size: 1.2rem;
 			text-decoration: none;

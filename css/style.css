@@ -48,6 +48,7 @@ footer {
   display: flex;
   justify-content: end;
   margin-left: none;
+  margin-right: 10px;
   z-index: 1; }
 
 .navbar-toggler {
@@ -198,7 +199,7 @@ footer {
     background: #4717f6; }
   .card:hover img {
     left: 50%;
-    height: 70%; }
+    width: 80%; }
   .card:hover .content {
     left: 0;
     opacity: 1;
@@ -209,7 +210,9 @@ footer {
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50%;
+    width: 70%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
     pointer-events: none;
     transition: 0.5s; }
   .card .content {
@@ -337,7 +340,7 @@ footer {
     flex: 1 1 auto;
     object-fit: cover; }
   .carousel__slide figcaption {
-    color: #6f04d9;
+    color: #ffffff;
     align-self: flex-end;
     padding: 20px 20px 0 20px;
     flex: 0 0 auto;
@@ -345,6 +348,8 @@ footer {
     min-width: 150px; }
   .carousel__slide .titulo_producto_destacado {
     margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: #4717f6;
     display: block; }
 
@@ -404,7 +409,7 @@ footer {
 
 .titulos {
   color: #4717f6;
-  font-size: 3rems;
+  font-size: 2rem;
   text-align: center; }
 
 .subtitulos {
@@ -416,8 +421,8 @@ footer {
   max-height: 35vh;
   max-width: 35vw;
   color: #ffffff;
-  margin-left: 30px;
-  margin-top: 20vh; }
+  margin-left: 5%;
+  margin-top: 20%; }
 
 .nuevosingresos__video {
   width: 100%;
@@ -428,13 +433,14 @@ footer {
 .marcas {
   grid-area: marcas;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #0e0b16; }
 
-.marcas__imagen {
-  width: 200px; }
+.marcas a img {
+  width: 15vw;
+  aspect-ratio: 3/2;
+  object-fit: contain; }
 
 /* FINAL MARCAS */
 .inocnofooter {
@@ -448,7 +454,8 @@ footer {
   list-style: none; }
   .footer__item a {
     text-decoration: none;
-    color: #6f04d9; }
+    color: #6f04d9;
+    font-weight: 500; }
 
 .contactofooter {
   grid-area: contactofooter;
@@ -763,7 +770,25 @@ div ul li {
     color: #ffffff;
     margin-left: 30px; }
 
+@media screen and (max-width: 2400px) {
+  .card {
+    width: 650px;
+    height: 487px; } }
+
+@media screen and (max-width: 2300px) {
+  .card {
+    width: 550px;
+    height: 412px; } }
+
+@media screen and (max-width: 1924px) {
+  .card {
+    width: 650px;
+    height: 487px; } }
+
 @media screen and (max-width: 1600px) {
+  .card {
+    width: 500px;
+    height: 375px; }
   .nuevosingresos__video {
     height: 80vh; } }
 
@@ -771,47 +796,26 @@ div ul li {
   header {
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 0.2fr 0.2 1fr;
-    grid-template-areas: "icono redesmenu redesmenu" "icono none none" "nav nav nav"; } }
+    grid-template-areas: "icono redesmenu redesmenu" "icono none none" "nav nav nav"; }
+  .card {
+    width: 450px;
+    height: 337px; } }
 
 @media screen and (max-width: 1200px) {
+  .card {
+    width: 400px;
+    height: 300px; }
   .nuevosingresos__video {
     height: 80vh; } }
 
 @media screen and (max-width: 1024px) {
-  .card {
-    position: relative;
-    width: 400px;
-    height: 200px; }
-    .card:hover img {
-      height: 70%; }
-    .card img {
-      height: 60%; }
-    .card .content {
-      padding: 10px 0 0 10px; }
-      .card .content h2 {
-        font-size: 0.5rem; }
-      .card .content h3 {
-        font-size: 0.3rem;
-        max-width: 30%; }
   .nuevosingresos__video {
-    height: 70vh; } }
+    height: 60vh; } }
 
 @media screen and (max-width: 1000px) {
   .card {
-    position: relative;
-    width: 400px;
-    height: 200px; }
-    .card:hover img {
-      height: 70%; }
-    .card img {
-      height: 60%; }
-    .card .content {
-      padding: 10px 0 0 10px; }
-      .card .content h2 {
-        font-size: 0.5rem; }
-      .card .content h3 {
-        font-size: 0.3rem;
-        max-width: 30%; }
+    width: 350px;
+    height: 262px; }
   .inoconofooter {
     text-align: center; }
   .navfooter {
@@ -827,11 +831,18 @@ div ul li {
     grid-template-areas: "iconofooter" "navfooter" "contactofooter"; } }
 
 @media screen and (max-width: 865px) {
+  .card {
+    width: 300px;
+    height: 225px; }
+  .content {
+    padding: 20px 20px 10px 20px; }
+    .content h2 {
+      font-size: x-large; }
+    .content h3 {
+      font-size: medium; }
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     max-width: 30vw;
-    margin-top: 8vh; } }
-
-@media screen and (max-width: 700px) {
+    margin-top: 8vh; }
   footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.2fr 1fr;
@@ -842,43 +853,58 @@ div ul li {
     margin-top: 20px;
     text-align: center; }
   .footer__item {
-    display: inline-flex; } }
+    display: inline-flex; }
+  .nuevosingresos__video {
+    height: 50vh; } }
+
+@media screen and (max-width: 740px) {
+  .menu_nav {
+    display: block; }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-template-areas: "iconofooter" "navfooter" "contactofooter"; }
+  .card {
+    width: 400px;
+    height: 300px; }
+  .inoconofooter {
+    text-align: center; }
+  .navfooter {
+    margin-top: 20px;
+    text-align: center; }
+  .footer__item {
+    display: inline-flex; }
+  .carousel__slide figcaption {
+    position: absolute;
+    right: 4000px; } }
 
 @media screen and (max-width: 600px) {
   .card {
-    position: relative;
-    width: 200px;
-    height: 100px; }
-    .card:hover img {
-      height: 70%; }
-    .card img {
-      height: 60%; }
-    .card .content {
-      padding: 10px 0 0 10px; }
-      .card .content h2 {
-        font-size: 0.5rem; }
-      .card .content h3 {
-        font-size: 0.3rem;
-        max-width: 30%; }
-  .marcas__imagen {
-    width: 100px; } }
+    width: 350px;
+    height: 262px; }
+  .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
+    font-size: 0.8rem;
+    max-height: 35vh;
+    max-width: 35vw;
+    color: #ffffff;
+    margin-left: 5%;
+    margin-top: 10%; } }
 
 @media screen and (max-width: 480px) {
   .card {
-    position: relative;
-    width: 250px;
-    height: 100px; }
-    .card:hover img {
-      height: 60%; }
-    .card img {
-      height: 50%; }
+    width: 230px;
+    height: 172px; }
     .card .content {
-      padding: 10px 0 0 10px; }
+      left: 10px;
+      padding: 10px; }
       .card .content h2 {
-        font-size: 0.5rem; }
+        font-size: large;
+        margin-bottom: 0; }
       .card .content h3 {
-        font-size: 0.3rem;
-        max-width: 30%; }
+        font-size: small;
+        margin-bottom: 0; }
+  .nuevosingresos__video {
+    height: 30vh; }
   footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.2fr 1fr;
@@ -886,7 +912,7 @@ div ul li {
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     margin-top: 30px;
     max-width: 30%;
-    font-size: 0.5rem; }
+    font-size: 0.6rem; }
   .inoconofooter {
     text-align: center; }
   .navfooter {
@@ -906,49 +932,18 @@ div ul li {
       font-size: 0.5em; }
     .tienda .bonton_carrito {
       width: 10em; }
-  .descripcionproducto {
-    font-size: 0.3em;
-    max-width: 30vw;
-    margin-top: 50px; }
   .descripcionproductoizquierda {
     font-size: 0.3em;
     max-width: 30vw;
-    margin-top: 50px; }
-  .carousel__slide figcaption {
-    position: absolute;
-    right: 4000px; }
-  .marcas__imagen {
-    width: 120px; }
-  .nuevosingresos__video {
-    height: 40vh; } }
+    margin-top: 50px; } }
 
 @media screen and (max-width: 320px) {
-  .card {
-    width: 180px;
-    height: 150px; }
-    .card:hover img {
-      height: 60%; }
-    .card img {
-      height: 50%; }
-    .card .content {
-      position: relative;
-      left: 20%;
-      padding: 10px 10px 10px 20px;
-      transition: 0.5s;
-      opacity: 0;
-      visibility: visible; }
-      .card .content h2 {
-        font-size: 0.5rem; }
-      .card .content h3 {
-        font-size: 0.3rem; }
   .contactofooter {
     margin-right: 10px;
     padding: 10px; }
   .descripcioningreso, .descripcionproducto, .descripcionproductoizquierda {
     margin-top: 30px;
     max-width: 30%;
-    font-size: 0.3rem; }
-  .marcas__imagen {
-    width: 90px; }
+    font-size: 0.5rem; }
   .nuevosingresos__video {
-    height: 35vh; } }
+    height: 25vh; } }
