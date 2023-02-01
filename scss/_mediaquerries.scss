@@ -18,6 +18,34 @@
         width: 650px;
         height:487px;
     }
+    /*Pagina Kumara*/
+    #tienda {
+        h1 {
+            font-size: 5rem;
+             padding: 20px;
+        }
+        p {
+           font-size: 3rem;
+        }
+        div {
+            font-size: 2rem;
+        }
+        .bonton_carrito {
+            width: 8em;
+
+        }
+    }
+    .descripcionproducto {
+        p {
+            font-size: 2rem;
+        }
+    }
+    .descripcionproductoizquierda {
+        p {
+            font-size: 2rem;
+        }   
+    }
+
 
 }
 
@@ -113,18 +141,36 @@ button {
     }
 }
 }
+/*pagina de Kumara*/
+#tienda {
+    margin-top: 30%;
+    h1 {
+        font-size: 3rem;
+         
+    }
+    p {
+       font-size: 2rem;
+       
+    }
+    div {
+        font-size: 1rem;
+    }
+    .bonton_carrito {
+        width: 8em;
 
+    }
+}
+.descripcionproducto {
+    p {
+        font-size: 1.2rem;
+    }
+}
+.descripcionproductoizquierda {
+    p {
+        font-size:1.2rem;
+    }   
 }
 
-@media screen and (max-width: 1200px) {  
-    .card {
-        width: 400px;
-        height:300px;
-    }
-
-    .nuevosingresos__video {
-        height: 80vh;
-    }
 
 }
 
@@ -423,6 +469,35 @@ a {
         width: 60%;
     }
 }
+/*pagina de Kumara*/
+#tienda {
+    margin-top: 30%;
+    h1 {
+        font-size: 2rem;
+       
+    }
+    p {
+       font-size: 1.5rem;
+      
+    }
+    div {
+        font-size: 0.7rem;
+    }
+    .bonton_carrito {
+        width: 8em;
+
+    }
+}
+.descripcionproducto {
+    p {
+        font-size: 0.7rem;
+    }
+}
+.descripcionproductoizquierda {
+    p {
+        font-size:0.7rem;
+    }   
+}
 
 } 
 
@@ -699,7 +774,36 @@ a {
            width: 60%;
        }
    }
- 
+   /*Pagina de Kumara*/
+   #tienda {
+    margin-top: 15%;
+    h1 {
+        font-size: 1.2rem;
+        padding: 10px;
+       
+    }
+    p {
+       font-size: 1rem;
+      padding: 10px;
+    }
+    div {
+        font-size: 0.7rem;
+    }
+    .bonton_carrito {
+        width: 8em;
+
+    }
+}
+
+
+.descripcionproducto {
+    left: 20%;
+  
+}
+.descripcionproductoizquierda {
+    left: 75%;
+  
+}
  
 }
 

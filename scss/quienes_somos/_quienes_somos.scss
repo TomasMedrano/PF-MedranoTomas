@@ -1,9 +1,8 @@
 #grillaquienes {
     width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:0.1 0.3fr 0.2fr ;
+    grid-template-rows:auto auto auto ;
     grid-template-areas: 
     "header"
     "mainquienes"
@@ -16,6 +15,29 @@
     background-color: $color-de-fondo;
     color: $blanco;
     display: grid;
-    grid-template-rows: 1fr !important;
-    text-align: center;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto;   
+}
+
+.historia_quienes {
+    width: 100vw;
+    
+
+}
+.contenedor_quienes {
+    color: $blanco;
+    justify-content: center;
+    background: rgb(111,4,217);
+    background: linear-gradient(90deg, rgba(111,4,217,0.15) 0%, rgba(111,4,217,0.15) 50%, rgba(111,4,217,0.15) 100%);
+    h1 {
+        padding: 5vw;
+        color: $blanco;
+    }
+    div {
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 10vh;
+    
+}
 }

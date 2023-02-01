@@ -17,7 +17,7 @@
     background-color: $color-de-fondo;
     display: grid;
     grid-template-columns:auto;
-    grid-template-rows: 0.1fr auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
     "tituloservicios"
     "reparacion_de_pc"
@@ -108,6 +108,8 @@
     transform: translate(-50%, -50%);
     iframe {
         width: 70%;
+        border-radius: 10px;
+       
     }
 }
 .mantenimiento_turno {
@@ -173,6 +175,7 @@
     transform: translate(-50%, -50%);
     iframe {
         width: 70%;
+        border-radius: 10px;
     }
 }
 .armado_turno {
@@ -240,6 +243,7 @@
     transform: translate(-50%, -50%);
     iframe {
         width: 70%;
+        border-radius: 10px;
     }
 }
 .actualizacion_turno {
