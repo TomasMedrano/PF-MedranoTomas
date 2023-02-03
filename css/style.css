@@ -1033,7 +1033,7 @@ footer {
 #descripcion3 {
   grid-area: descripcion3; }
 
-main {
+.main_login {
   display: flex;
   align-items: center;
   justify-content: center;

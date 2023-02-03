@@ -1,12 +1,11 @@
 
-
-main{
+.main_login {
     display: flex;
     align-items: center;
     justify-content: center;
-   height: auto;
+    height: auto;
     background-color: $color-de-fondo;
-      padding: 5%;
+    padding: 5%;
 }
 
 
@@ -17,7 +16,6 @@ main{
     align-items: center;
     width: 450px;
     height: 550px;
-  
     background: transparent;
     border: 4px solid;
     border-color: $blanco;
