@@ -1,0 +1,154 @@
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: auto;
+    background-color: $color-de-fondo;
+      padding: 5%;
+}
+
+
+.contenedor_de_formulario{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 550px;
+  
+    background: transparent;
+    border: 4px solid;
+    border-color: $blanco;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.contenedor_de_formulario:hover{
+    border: 4px solid $violeta;
+    box-shadow: 0 0 20px violet,
+                inset 0 0 20px blueviolet;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: $blanco !important;
+    transition: 0.5s;
+}
+
+.contenedor_de_formulario:hover h2{
+    color: $morado;
+    
+}
+
+.caja_de_input{
+    position: relative;
+    width: 320px;
+    margin:30px 0; 
+}
+
+.caja_de_input input{
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    background: transparent;
+    border:2px solid;
+    border-color: transparent;
+    outline: none;
+    font-size: 1em;
+    color: $blanco ;
+    padding: 0 10px 0 35px;
+    transition: 0.5s;
+}
+
+.contenedor_de_formulario:hover .caja_de_input input{
+    border: 2px solid $morado;
+    box-shadow: 0 0 10px $morado,
+                inset 0 0 10px $morado;
+}
+
+.caja_de_input input::placeholder{
+    color: rgba(255, 255, 255, 0.3);
+    
+}
+
+.caja_de_input .icon{
+    position: absolute;
+    left: 10px;
+    color: $blanco;
+    font-size: 1.2em;
+    line-height: 55px;
+    transition: 0.5s;
+}
+
+.contenedor_de_formulario:hover .input-box .icon{
+    color: $blanco;
+
+}
+
+.olvidaste_contraseña{
+    margin: -15px 0 15px;
+}
+
+
+.olvidaste_contraseña a{
+    color: $blanco;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.olvidaste_contraseña a:hover{
+    text-decoration: underline;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--white-color);
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.contenedor_de_formulario:hover button {
+    color: $blanco;
+    background: $morado;
+    box-shadow: 0 0 10px solid $morado,
+                inset 0 0 10px solid $morado;
+
+}
+
+.link_registro{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.link_registro p{
+    color: $blanco;
+}
+
+.link_registro p a{
+    color: $violeta;
+    text-decoration: none;
+    font-weight: 600;  
+    transition: 0.5s;
+}
+
+.contenedor_de_formulario:hover .link_registro p a{
+    color: $morado;
+    box-shadow: 0 0 10px solid $morado,
+                inset 0 0 10px solid $morado;
+}
+
+.link_registro p a:hover{
+    text-decoration: underline;
+}

@@ -15,15 +15,23 @@
     background-color: $color-de-fondo;
     color: $blanco;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:auto;   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "historia_quienes historia_quienes"
+    "quienes_texto1 quienes_foto1"
+    "quienes_foto2 quienes_texto2"
+    "quienes_texto3 quienes_foto3"
+    "quienes_foto4 quienes_texto4"
+    "quienes_texto5 quienes_foto5"
+    ;   
 }
 
 .historia_quienes {
-    width: 100vw;
-    
-
+    grid-area: historia_quienes;
+   
 }
+
 .contenedor_quienes {
     color: $blanco;
     justify-content: center;
@@ -40,4 +48,86 @@
         padding-bottom: 10vh;
     
 }
+
+}
+
+
+.quienes_texto1 {
+    grid-area: quienes_texto1;
+    max-width: 40vw;
+    margin-top: 10%;
+    text-align: center;
+    max-width: 80%;
+}
+.quienes_foto1 {
+    grid-area: quienes_foto1;
+   img {
+    max-width: 80%;
+   }  
+}
+
+
+
+.quienes_foto2 {
+    grid-area: quienes_foto2;
+    text-align: end; 
+    img {
+        max-width: 80%;
+       }   
+}
+
+.quienes_texto2 {
+    grid-area: quienes_texto2;
+    max-width: 80%;
+    margin-top: 10%;
+    text-align: center;
+   
+}
+
+
+.quienes_foto3 {
+    grid-area: quienes_foto3;
+    
+    img {
+        max-width: 80%;
+       }   
+}
+.quienes_texto3 {
+    grid-area: quienes_texto3;
+    max-width: 40vw;
+    text-align: center;
+    max-width: 80%;
+    margin-top: 10%;
+ 
+}
+
+.quienes_foto4 {
+    grid-area: quienes_foto4;
+    text-align: end;
+    img {
+        max-width: 80%;
+       }  
+      
+}
+.quienes_texto4 {
+    grid-area: quienes_texto4;
+    max-width: 40vw;
+    text-align: center;
+    margin-top: 10%;
+    max-width: 80%;
+}
+.quienes_foto5 {
+    grid-area: quienes_foto5;
+    img {
+        max-width: 80%;
+       }  
+   
+ 
+}
+.quienes_texto5 {
+    grid-area: quienes_texto5;
+    text-align: center;
+    max-width: 80%;
+    margin-top: 10%;
+    
 }
