@@ -225,6 +225,7 @@ footer {
     opacity: 0;
     visibility: visible; }
     .card .content h2 {
+      text-align: start;
       color: #ffffff;
       margin-bottom: 5px; }
     .card .content h3 {
@@ -1153,6 +1154,32 @@ button {
 
 .link_registro p a:hover {
   text-decoration: underline; }
+
+.main_teclados {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "portada_teclados" "teclados"; }
+  .main_teclados .portada_teclados {
+    grid-area: portada_teclados;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "portada_teclados_imagen portada_teclados_titulo"; }
+    .main_teclados .portada_teclados .portada_teclados_titulo {
+      grid-area: portada_teclados_titulo;
+      min-width: 100%;
+      background: #6f04d9;
+      background: linear-gradient(90deg, rgba(111, 4, 217, 0.15) 0%, rgba(111, 4, 217, 0.15) 50%, rgba(111, 4, 217, 0.15) 100%); }
+      .main_teclados .portada_teclados .portada_teclados_titulo img {
+        width: 80%; }
+    .main_teclados .portada_teclados .portada_teclados_imagen {
+      background: #6f04d9;
+      background: linear-gradient(90deg, rgba(111, 4, 217, 0.15) 0%, rgba(111, 4, 217, 0.15) 50%, rgba(111, 4, 217, 0.15) 100%);
+      grid-area: portada_teclados_imagen;
+      text-align: center; }
+      .main_teclados .portada_teclados .portada_teclados_imagen img {
+        width: 70%; }
 
 div h1 {
   color: #6f04d9;
