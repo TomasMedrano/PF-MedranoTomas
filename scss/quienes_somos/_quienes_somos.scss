@@ -38,14 +38,13 @@
     background: rgb(111,4,217);
     background: linear-gradient(90deg, rgba(111,4,217,0.15) 0%, rgba(111,4,217,0.15) 50%, rgba(111,4,217,0.15) 100%);
     h1 {
-        padding: 5vw;
+      
         color: $blanco;
     }
     div {
         text-align: center;
-        margin-left: 20%;
-        margin-right: 20%;
-        padding-bottom: 10vh;
+      
+       font-size: 2rem;
     
 }
 
@@ -54,10 +53,14 @@
 
 .quienes_texto1 {
     grid-area: quienes_texto1;
-    max-width: 40vw;
-    margin-top: 10%;
-    text-align: center;
-    max-width: 80%;
+        p {
+             position: absolute;
+             max-width: 30%;
+             margin: 5%;
+             font-size: 2rem;
+
+        }
+
 }
 .quienes_foto1 {
     grid-area: quienes_foto1;
@@ -70,7 +73,7 @@
 
 .quienes_foto2 {
     grid-area: quienes_foto2;
-    text-align: end; 
+
     img {
         max-width: 80%;
        }   
@@ -78,32 +81,37 @@
 
 .quienes_texto2 {
     grid-area: quienes_texto2;
-    max-width: 80%;
-    margin-top: 10%;
-    text-align: center;
-   
+        p {
+             position: absolute;
+             max-width: 30%;
+             margin: 5%;
+             font-size: 2rem;
+
+        }
+
 }
 
 
 .quienes_foto3 {
-    grid-area: quienes_foto3;
-    
+    grid-area: quienes_foto3; 
     img {
         max-width: 80%;
        }   
 }
 .quienes_texto3 {
     grid-area: quienes_texto3;
-    max-width: 40vw;
-    text-align: center;
-    max-width: 80%;
-    margin-top: 10%;
- 
+        p {
+             position: absolute;
+             max-width: 30%;
+             margin: 5%;
+             font-size: 2rem;
+
+        }
+
 }
 
 .quienes_foto4 {
     grid-area: quienes_foto4;
-    text-align: end;
     img {
         max-width: 80%;
        }  
@@ -111,10 +119,14 @@
 }
 .quienes_texto4 {
     grid-area: quienes_texto4;
-    max-width: 40vw;
-    text-align: center;
-    margin-top: 10%;
-    max-width: 80%;
+        p {
+             position: absolute;
+             max-width: 30%;
+             margin: 5%;
+             font-size: 2rem;
+
+        }
+
 }
 .quienes_foto5 {
     grid-area: quienes_foto5;
@@ -126,8 +138,12 @@
 }
 .quienes_texto5 {
     grid-area: quienes_texto5;
-    text-align: center;
-    max-width: 80%;
-    margin-top: 10%;
-    
+        p {
+             position: absolute;
+             max-width: 30%;
+             margin: 5%;
+             font-size: 2rem;
+
+        }
+
 }

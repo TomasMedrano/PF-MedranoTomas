@@ -173,7 +173,35 @@ button {
 
 
 }
+@media screen and (max-width: 1200px) {
+    .quienes_texto1 {
+            p {
+                 font-size: 1.5rem;
+            }
+    
+    }
+    .quienes_texto2 {
+        p {
+             font-size: 1.5rem;
+        }
+    }
+    .quienes_texto3 {
+            p {
+                 font-size: 1.5rem;
+            }
+        }
+    .quienes_texto4 {
+        p {
+             font-size: 1.5rem;
+        }
+    }
+    .quienes_texto5 {
+        p {
+             font-size: 1.5rem;
+        }
+    }
 
+}
 @media screen and (max-width: 1024px) {
     .nuevosingresos__video {
         height: 60vh;
@@ -342,6 +370,35 @@ button {
             width: 40%;
         }
     }
+
+
+/*Pagina de quienes somos*/
+.quienes_texto1 {
+    p {
+         font-size: 1rem;
+    }
+
+}
+.quienes_texto2 {
+p {
+     font-size: 1rem;
+}
+}
+.quienes_texto3 {
+    p {
+         font-size: 1rem;
+    }
+}
+.quienes_texto4 {
+p {
+     font-size: 1rem;
+}
+}
+.quienes_texto5 {
+p {
+     font-size: 1rem;
+}
+}
 
 
 }
@@ -612,6 +669,110 @@ a {
         width: 60%;
     }
 }
+/*Pagina de quienes somos*/
+.mainquienes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11,auto);
+    grid-template-areas: 
+    "historia_quienes"
+    "quienes_foto1"
+    "quienes_texto1"
+    "quienes_foto2"
+    "quienes_texto2"
+    "quienes_foto3"
+    "quienes_texto3"
+    "quienes_foto4"
+    "quienes_texto4"
+    "quienes_foto5"
+    "quienes_texto5"
+    ;   
+}
+.contenedor_quienes {
+    h1 {
+        padding: 0;
+        color: $blanco;
+    }
+    div {
+      padding: 10px;
+       font-size: 1.5rem;
+    
+}
+
+}
+
+.quienes_texto1 {
+    padding: 10%;
+    p {
+        position: relative;
+        max-width: 60%;
+       
+    }
+
+}
+.quienes_texto2 {
+    padding: 10%;
+p {
+    position: relative;
+    max-width: 60%;
+}
+}
+.quienes_texto3 {
+    padding: 10%;
+    p {
+        position: relative;
+        max-width: 60%;
+    }
+}
+.quienes_texto4 {
+    padding: 10%;
+p {
+    position: relative;
+    max-width: 60%;
+
+}
+}
+.quienes_texto5 {
+    padding: 10%;
+p {
+    position: relative;
+    max-width: 60%;
+}
+}
+.quienes_foto1 {
+    width: 100vw;
+   img {
+    margin: 10%;
+   
+   }  
+}
+.quienes_foto2 {
+    width: 100vw;
+    img {
+        margin: 10%;
+    
+    }  
+ }
+ .quienes_foto3 {
+    width: 100vw;
+    img {
+        margin: 10%;
+  
+    }  
+ }
+ .quienes_foto4 {
+    width: 100vw;
+    img {
+        margin: 10%;
+     
+    }  
+ }
+ .quienes_foto5 {
+    width: 100vw;
+    img {
+        margin: 10%;
+    }  
+ }
 
 } 
 
@@ -810,7 +971,8 @@ a {
     margin:10px 0;   
 
 }
- 
+
+
 }
 
 @media screen and (max-width: 320px) {

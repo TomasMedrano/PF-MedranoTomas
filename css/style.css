@@ -885,20 +885,18 @@ footer {
   background: #6f04d9;
   background: linear-gradient(90deg, rgba(111, 4, 217, 0.15) 0%, rgba(111, 4, 217, 0.15) 50%, rgba(111, 4, 217, 0.15) 100%); }
   .contenedor_quienes h1 {
-    padding: 5vw;
     color: #ffffff; }
   .contenedor_quienes div {
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 10vh; }
+    font-size: 2rem; }
 
 .quienes_texto1 {
-  grid-area: quienes_texto1;
-  max-width: 40vw;
-  margin-top: 10%;
-  text-align: center;
-  max-width: 80%; }
+  grid-area: quienes_texto1; }
+  .quienes_texto1 p {
+    position: absolute;
+    max-width: 30%;
+    margin: 5%;
+    font-size: 2rem; }
 
 .quienes_foto1 {
   grid-area: quienes_foto1; }
@@ -906,16 +904,17 @@ footer {
     max-width: 80%; }
 
 .quienes_foto2 {
-  grid-area: quienes_foto2;
-  text-align: end; }
+  grid-area: quienes_foto2; }
   .quienes_foto2 img {
     max-width: 80%; }
 
 .quienes_texto2 {
-  grid-area: quienes_texto2;
-  max-width: 80%;
-  margin-top: 10%;
-  text-align: center; }
+  grid-area: quienes_texto2; }
+  .quienes_texto2 p {
+    position: absolute;
+    max-width: 30%;
+    margin: 5%;
+    font-size: 2rem; }
 
 .quienes_foto3 {
   grid-area: quienes_foto3; }
@@ -923,24 +922,25 @@ footer {
     max-width: 80%; }
 
 .quienes_texto3 {
-  grid-area: quienes_texto3;
-  max-width: 40vw;
-  text-align: center;
-  max-width: 80%;
-  margin-top: 10%; }
+  grid-area: quienes_texto3; }
+  .quienes_texto3 p {
+    position: absolute;
+    max-width: 30%;
+    margin: 5%;
+    font-size: 2rem; }
 
 .quienes_foto4 {
-  grid-area: quienes_foto4;
-  text-align: end; }
+  grid-area: quienes_foto4; }
   .quienes_foto4 img {
     max-width: 80%; }
 
 .quienes_texto4 {
-  grid-area: quienes_texto4;
-  max-width: 40vw;
-  text-align: center;
-  margin-top: 10%;
-  max-width: 80%; }
+  grid-area: quienes_texto4; }
+  .quienes_texto4 p {
+    position: absolute;
+    max-width: 30%;
+    margin: 5%;
+    font-size: 2rem; }
 
 .quienes_foto5 {
   grid-area: quienes_foto5; }
@@ -948,10 +948,12 @@ footer {
     max-width: 80%; }
 
 .quienes_texto5 {
-  grid-area: quienes_texto5;
-  text-align: center;
-  max-width: 80%;
-  margin-top: 10%; }
+  grid-area: quienes_texto5; }
+  .quienes_texto5 p {
+    position: absolute;
+    max-width: 30%;
+    margin: 5%;
+    font-size: 2rem; }
 
 #grilladonde {
   height: 100vh;
@@ -1282,6 +1284,18 @@ div ul li {
   .descripcionproductoizquierda p {
     font-size: 1.2rem; } }
 
+@media screen and (max-width: 1200px) {
+  .quienes_texto1 p {
+    font-size: 1.5rem; }
+  .quienes_texto2 p {
+    font-size: 1.5rem; }
+  .quienes_texto3 p {
+    font-size: 1.5rem; }
+  .quienes_texto4 p {
+    font-size: 1.5rem; }
+  .quienes_texto5 p {
+    font-size: 1.5rem; } }
+
 @media screen and (max-width: 1024px) {
   .nuevosingresos__video {
     height: 60vh; }
@@ -1359,7 +1373,18 @@ div ul li {
   .titulo_de_caratula h1 {
     font-size: 1.7rem; }
   .armado_gif iframe {
-    width: 40%; } }
+    width: 40%; }
+  /*Pagina de quienes somos*/
+  .quienes_texto1 p {
+    font-size: 1rem; }
+  .quienes_texto2 p {
+    font-size: 1rem; }
+  .quienes_texto3 p {
+    font-size: 1rem; }
+  .quienes_texto4 p {
+    font-size: 1rem; }
+  .quienes_texto5 p {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 740px) {
   .menu_nav {
@@ -1498,7 +1523,64 @@ div ul li {
   .actualizacion_gif {
     left: 10000px; }
     .actualizacion_gif iframe {
-      width: 60%; } }
+      width: 60%; }
+  /*Pagina de quienes somos*/
+  .mainquienes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, auto);
+    grid-template-areas: "historia_quienes" "quienes_foto1" "quienes_texto1" "quienes_foto2" "quienes_texto2" "quienes_foto3" "quienes_texto3" "quienes_foto4" "quienes_texto4" "quienes_foto5" "quienes_texto5"; }
+  .contenedor_quienes h1 {
+    padding: 0;
+    color: #ffffff; }
+  .contenedor_quienes div {
+    padding: 10px;
+    font-size: 1.5rem; }
+  .quienes_texto1 {
+    padding: 10%; }
+    .quienes_texto1 p {
+      position: relative;
+      max-width: 60%; }
+  .quienes_texto2 {
+    padding: 10%; }
+    .quienes_texto2 p {
+      position: relative;
+      max-width: 60%; }
+  .quienes_texto3 {
+    padding: 10%; }
+    .quienes_texto3 p {
+      position: relative;
+      max-width: 60%; }
+  .quienes_texto4 {
+    padding: 10%; }
+    .quienes_texto4 p {
+      position: relative;
+      max-width: 60%; }
+  .quienes_texto5 {
+    padding: 10%; }
+    .quienes_texto5 p {
+      position: relative;
+      max-width: 60%; }
+  .quienes_foto1 {
+    width: 100vw; }
+    .quienes_foto1 img {
+      margin: 10%; }
+  .quienes_foto2 {
+    width: 100vw; }
+    .quienes_foto2 img {
+      margin: 10%; }
+  .quienes_foto3 {
+    width: 100vw; }
+    .quienes_foto3 img {
+      margin: 10%; }
+  .quienes_foto4 {
+    width: 100vw; }
+    .quienes_foto4 img {
+      margin: 10%; }
+  .quienes_foto5 {
+    width: 100vw; }
+    .quienes_foto5 img {
+      margin: 10%; } }
 
 @media screen and (max-width: 480px) {
   .card {
