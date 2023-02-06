@@ -1190,18 +1190,22 @@ button {
       .main_teclados .portada_teclados .portada_teclados_imagen img {
         width: 70%; }
 
-div h1 {
+.bodymapa {
+  background-color: #0e0b16; }
+
+.mainmapa div h1 {
   color: #6f04d9;
   text-align: center;
   margin-top: 20px; }
 
-div h2 {
+.mainmapa div h2 {
   color: #4717f6;
-  margin-left: 30px; }
+  margin-left: 30px;
+  text-align: start; }
 
-div ul li {
+.mainmapa div ul li {
   list-style: none; }
-  div ul li a {
+  .mainmapa div ul li a {
     text-decoration: none;
     color: #ffffff;
     margin-left: 30px; }
