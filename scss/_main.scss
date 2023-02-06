@@ -5,6 +5,14 @@
     background-color: $color-de-fondo;
 	width: 100%;
 }
+.carousel-control-prev {
+	position: absolute;
+	top: 40%;
+}
+.carousel-control-next {
+	position: absolute;
+	top: 40%;
+}
 /* FIN DE CARRUSEL */
 /* CATEGORIAS */
 .categorias {

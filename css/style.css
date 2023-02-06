@@ -66,7 +66,7 @@ footer {
       text-decoration: none;
       text-transform: uppercase;
       color: #ffffff;
-      margin-right: 10px;
+      margin-right: 20px;
       transition: 0.5s ease; }
   .menu_nav:hover li a {
     color: #4717f6; }
@@ -158,6 +158,14 @@ footer {
   grid-area: carrousel;
   background-color: #0e0b16;
   width: 100%; }
+
+.carousel-control-prev {
+  position: absolute;
+  top: 40%; }
+
+.carousel-control-next {
+  position: absolute;
+  top: 40%; }
 
 /* FIN DE CARRUSEL */
 /* CATEGORIAS */
@@ -1297,6 +1305,9 @@ button {
     font-size: 1.2rem; } }
 
 @media screen and (max-width: 1200px) {
+  .card {
+    width: 400px;
+    height: 300px; }
   .quienes_texto1 p {
     font-size: 1.5rem; }
   .quienes_texto2 p {
@@ -1711,6 +1722,20 @@ button {
   .caja_de_input {
     width: 280px;
     margin: 10px 0; } }
+
+@media screen and (max-width: 340px) {
+  .card {
+    width: 200px;
+    height: 150px; }
+    .card .content {
+      left: 2px;
+      padding: 10px; }
+      .card .content h2 {
+        font-size: large;
+        margin-bottom: 0; }
+      .card .content h3 {
+        font-size: small;
+        margin-bottom: 0; } }
 
 @media screen and (max-width: 320px) {
   .contactofooter {
