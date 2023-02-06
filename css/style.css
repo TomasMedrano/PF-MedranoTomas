@@ -1493,7 +1493,7 @@ button {
   .titulo_de_caratula h1 {
     font-size: 1.4rem; }
   .mantenimiento_titulo {
-    left: 65%; }
+    left: 70%; }
     .mantenimiento_titulo h2 {
       font-size: 1.2rem;
       font-weight: 500;
@@ -1511,7 +1511,7 @@ button {
     font-weight: 500;
     min-width: 100%; }
   .armado_texto, .descripcionproducto {
-    left: 30%;
+    left: 25%;
     top: 50%; }
     .armado_texto p, .descripcionproducto p {
       font-size: 0.6rem; }
@@ -1522,7 +1522,7 @@ button {
       .armado_turno button a {
         font-size: 0.8rem; }
   .actualizacion_titulo {
-    left: 65%; }
+    left: 70%; }
     .actualizacion_titulo h2 {
       font-size: 1.2rem;
       font-weight: 500;
@@ -1639,7 +1639,7 @@ button {
   .titulo_de_caratula h1 {
     font-size: 1rem; }
   .mantenimiento_titulo {
-    left: 43%; }
+    left: 50%; }
     .mantenimiento_titulo h2 {
       font-size: 1rem;
       font-weight: 500;
@@ -1655,7 +1655,7 @@ button {
     .mantenimiento_turno button a {
       font-size: 0.7   rem; }
   .armado_titulo {
-    left: 43%; }
+    left: 50%; }
     .armado_titulo h2 {
       font-size: 1rem;
       left: 50%;
@@ -1673,7 +1673,7 @@ button {
     .armado_turno button a {
       font-size: 0.8rem; }
   .actualizacion_titulo {
-    left: 43%;
+    left: 50%;
     min-width: 150px; }
     .actualizacion_titulo h2 {
       font-size: 1rem;
