@@ -11,9 +11,9 @@ header {
   grid-area: header;
   background-color: black;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.2 1fr;
-  grid-template-areas: "icono redesmenu redesmenu" "icono login login" "icono nav nav"; }
+  grid-template-columns: 0.5fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "icono redesmenu redesmenu" "icono nav nav"; }
 
 .main__index {
   grid-area: main;
@@ -38,6 +38,13 @@ footer {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Khand', sans-serif; }
+
+.wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 10px; }
+  .wpp img {
+    width: 70px; }
 
 .icono {
   grid-area: icono; }
@@ -254,6 +261,7 @@ footer {
 .titulo-producto-destacado {
   grid-area: titulo-producto-destacado;
   color: #4717f6;
+  font-size: 1rem;
   margin-left: 10%; }
 
 .caja_productos_destacados {
@@ -498,11 +506,6 @@ footer {
 .mapa_de_sitio {
   text-decoration: none;
   color: #6f04d9; }
-
-.wpp {
-  position: fixed;
-  bottom: 20px;
-  right: 10px; }
 
 #grillaproductos {
   display: grid;
@@ -1036,8 +1039,8 @@ footer {
     font-size: 2.5rem; }
 
 .descripcionproductoizquierda {
-  max-width: 25%;
-  left: 70%;
+  max-width: 30%;
+  left: 75%;
   top: 50%; }
   .descripcionproductoizquierda p {
     background-color: transparent;
@@ -1256,10 +1259,6 @@ button {
     height: 80vh; } }
 
 @media screen and (max-width: 1400px) {
-  header {
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2 1fr;
-    grid-template-areas: "icono redesmenu redesmenu" "icono none none" "nav nav nav"; }
   .card {
     width: 450px;
     height: 337px; }
@@ -1305,6 +1304,10 @@ button {
     font-size: 1.2rem; } }
 
 @media screen and (max-width: 1200px) {
+  header {
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    grid-template-areas: "icono redesmenu redesmenu" "icono none none" "nav nav nav"; }
   .card {
     width: 400px;
     height: 300px; }
@@ -1349,6 +1352,13 @@ button {
     font-size: 0.8rem; } }
 
 @media screen and (max-width: 1000px) {
+  header {
+    grid-area: header;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "icono redesmenu redesmenu" "icono nav nav"; }
   .card {
     width: 350px;
     height: 262px; }
@@ -1364,7 +1374,13 @@ button {
   footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.2fr 1fr;
-    grid-template-areas: "iconofooter" "navfooter" "contactofooter"; } }
+    grid-template-areas: "iconofooter" "navfooter" "contactofooter"; }
+  #tienda {
+    margin-top: 0; }
+    #tienda h1 {
+      padding: 50px; }
+    #tienda p {
+      padding: 20px; } }
 
 @media screen and (max-width: 865px) {
   .card {
@@ -1407,7 +1423,13 @@ button {
   .quienes_texto4 p {
     font-size: 1rem; }
   .quienes_texto5 p {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  /*PAGINA DE PRODUCTOS*/
+  #tienda h1 {
+    font-size: 2rem;
+    margin-top: 15px; }
+  #tienda p {
+    margin: 5px; } }
 
 @media screen and (max-width: 740px) {
   .menu_nav {
@@ -1463,16 +1485,16 @@ button {
   .actualizacion_gif iframe {
     width: 60%; }
   /*pagina de Kumara*/
-  #tienda {
-    margin-top: 30%; }
-    #tienda h1 {
-      font-size: 2rem; }
-    #tienda p {
-      font-size: 1.5rem; }
-    #tienda div {
-      font-size: 0.7rem; }
-    #tienda .bonton_carrito {
-      width: 8em; }
+  #tienda h1 {
+    font-size: 2rem;
+    padding: 30px; }
+  #tienda p {
+    font-size: 1.5rem;
+    padding: 20px; }
+  #tienda div {
+    font-size: 0.7rem; }
+  #tienda .bonton_carrito {
+    width: 8em; }
   .descripcionproducto p {
     font-size: 0.7rem; }
   .descripcionproductoizquierda p {
@@ -1603,7 +1625,13 @@ button {
   .quienes_foto5 {
     width: 100vw; }
     .quienes_foto5 img {
-      margin: 10%; } }
+      margin: 10%; }
+  /*pagina de Kumara*/
+  #tienda h1 {
+    font-size: 2rem;
+    padding: 20px; }
+  #tienda p {
+    padding: 10px; } }
 
 @media screen and (max-width: 480px) {
   .card {
@@ -1631,10 +1659,12 @@ button {
   .inoconofooter {
     text-align: center; }
   .navfooter {
-    margin-top: 20px;
-    text-align: center; }
+    margin-top: 0; }
   .footer__item {
     display: inline-flex; }
+  .contactofooter {
+    margin-right: 10px;
+    padding: 10px; }
   /*Pagina de servicios*/
   .titulo_de_caratula h1 {
     font-size: 1rem; }
@@ -1702,18 +1732,15 @@ button {
     .actualizacion_gif iframe {
       width: 60%; }
   /*Pagina de Kumara*/
-  #tienda {
-    margin-top: 15%; }
-    #tienda h1 {
-      font-size: 1.2rem;
-      padding: 10px; }
-    #tienda p {
-      font-size: 1rem;
-      padding: 10px; }
-    #tienda div {
-      font-size: 0.7rem; }
-    #tienda .bonton_carrito {
-      width: 8em; }
+  #tienda h1 {
+    font-size: 1rem;
+    padding: 10px; }
+  #tienda p {
+    padding: 0px; }
+  div {
+    font-size: 0.5rem; }
+  .bonton_carrito {
+    width: 4em; }
   .descripcionproducto {
     left: 20%; }
   .descripcionproductoizquierda {
@@ -1722,20 +1749,6 @@ button {
   .caja_de_input {
     width: 280px;
     margin: 10px 0; } }
-
-@media screen and (max-width: 340px) {
-  .card {
-    width: 200px;
-    height: 150px; }
-    .card .content {
-      left: 2px;
-      padding: 10px; }
-      .card .content h2 {
-        font-size: large;
-        margin-bottom: 0; }
-      .card .content h3 {
-        font-size: small;
-        margin-bottom: 0; } }
 
 @media screen and (max-width: 320px) {
   .contactofooter {
