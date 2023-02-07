@@ -1,0 +1,60 @@
+#grilla {
+    display: grid; 
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+} 
+
+
+header{
+    grid-area: header;
+    background-color: $negro;
+   display: grid;
+   grid-template-columns: 0.5fr 1.5fr 1fr;
+   grid-template-rows: 0.5fr 0.5fr;
+   grid-template-areas: 
+   "icono redesmenu redesmenu"
+   "icono nav nav"
+   ;
+}
+
+
+.main__index {
+    grid-area: main;
+    width: 100vw;
+    background-color: $color-de-fondo;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.5fr repeat(5,auto) 0.01fr;
+    grid-template-areas: 
+    "carrousel"
+    "categorias"
+    "categorias"
+    "productos_destacados"
+    "nuevos_ingresos"
+    "nuevos_ingresos"
+    "marcas"
+    ;
+}
+
+
+footer {
+    grid-area: footer;
+    height: auto;
+    background-color: $negro;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas:
+   "iconofooter navfooter contactofooter"
+   ;
+}
+
+
+
+

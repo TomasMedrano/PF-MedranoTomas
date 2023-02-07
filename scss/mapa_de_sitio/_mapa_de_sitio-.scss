@@ -1,0 +1,37 @@
+.bodymapa {
+    background-color: $color-de-fondo;
+}
+.mainmapa {
+    div {
+        h1 {
+            color: $violeta;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h2 {
+            color: $morado;
+            margin-left: 30px;
+            text-align: start;
+        }
+        ul { 
+            li {
+                list-style: none;
+           
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                    margin-left: 30px;
+
+                }
+            }
+        }
+    }
+
+
+}
+ 
+  
+
+
+
+
